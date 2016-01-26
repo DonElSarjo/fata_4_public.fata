@@ -19,7 +19,7 @@ item14[] = {"Give_Loudout_5",2,250,-1536.286133,2192.126221,-1446.286133,2242.12
 item15[] = {"Give_Loudout_6",2,250,-1549.097168,2423.166992,-1459.097168,2473.166992,0.000000,"Give Loudout"};
 item16[] = {"AT",4,218,-1274.225464,2239.062256,-1184.225586,2289.062256,0.000000,"AT"};
 item17[] = {"Give_Loudout_7",2,250,-1546.820313,2258.107666,-1456.820313,2308.107666,0.000000,"Give Loudout"};
-item18[] = {"AA__",4,218,-1279.706177,2494.154297,-1189.706299,2544.154297,0.000000,"AA" \n "" \n ""};
+item18[] = {"AA__",4,4314,-1279.706177,2494.154297,-1189.706299,2544.154297,0.000000,"AA" \n "" \n ""};
 item19[] = {"Give_Loudout_8",2,250,-1550.653320,2524.834473,-1460.653320,2574.834473,0.000000,"Give Loudout"};
 item20[] = {"FLORA_MOUNT_",4,218,-912.824036,1734.100098,-822.824036,1784.100098,0.000000,"FLORA MOUNT" \n ""};
 link0[] = {0,20};
@@ -42,8 +42,8 @@ link16[] = {9,15};
 link17[] = {16,17};
 link18[] = {18,19};
 link19[] = {20,1};
-globals[] = {0.000000,0,0,0,0,640,480,1,128,6316128,1,-1972.728760,-97.946289,3252.521973,1180.887451,800,884,1};
-window[] = {2,-1,-1,-1,-1,837,1998,3438,78,3,818};
+globals[] = {0.000000,0,0,0,0,640,480,1,128,6316128,1,-1736.446533,-929.414307,2710.002930,1818.232422,800,884,1};
+window[] = {2,-1,-1,-1,-1,889,2050,3490,130,3,818};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -89,7 +89,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout_5";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_rifleman"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_rifleman"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -100,7 +100,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout_2";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_junior_sergeant"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_junior_sergeant"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -111,7 +111,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout_3";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_machinegunner"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -122,7 +122,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout_4";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_marksman"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_marksman"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -133,7 +133,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout_1";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_sergeant"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_sergeant"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -144,7 +144,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_medic"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_medic"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -155,7 +155,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout_6";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_grenadier"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_grenadier"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -166,7 +166,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout_7";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_at"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_at"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -177,7 +177,7 @@ class FSM
                                         priority = 0.000000;
                                         to="Give_Loudout_8";
                                         precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_emr_aa"""/*%FSM</CONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit isEqualTo ""rhs_msv_emr_aa"""/*%FSM</CONDITION""">*/;
                                         action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
                                 };
                                 /*%FSM</LINK>*/
@@ -214,7 +214,6 @@ class FSM
                          "[" \n
                          "	""des_EMRdesertSergeantAK74m""," \n
                          "	""des_EMRdesertSergeantAK105""," \n
-                         "	""des_EMRdesertSergeantAK74""," \n
                          "	""des_EMRdesertSergeantAKM""," \n
                          "	""des_EMRdesertSergeantAKMS""," \n
                          "	""des_EMRdesertSergeantAK103""," \n

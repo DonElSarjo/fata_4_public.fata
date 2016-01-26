@@ -69,14 +69,12 @@ getGridPos = {
 SL_fnc_createTriggers = {
 	/*
 	private ["_markers","_pos","_trigE"];
-
 	{
 		_pos = getMarkerPos _x;
 		_trigE = createTrigger ["EmptyDetector", _pos ];
 		_trigE setTriggerActivation ["ANY", "PRESENT", false];
 		_trigE setTriggerArea [50, 50, 0, true];
 		_trigE setTriggerStatements ["{(side _x) == resistance} count thisList == 0 AND {(side _x) == east } count thisList >= 1", format["""%1"" setMarkerColor ""ColorGreen"";",_x], ""];
-
 	} foreach _this;
 */
 };

@@ -1,4 +1,8 @@
-[_this select 0] execFSM "6RusLoudouts\loadoutselector.fsm";
+private "_unit";
+
+_unit = _this select 0;
+
+[_unit] execFSM "6RusLoudouts\loadoutselector.fsm";
 
 player setVariable ["BIS_noCoreConversations", true];
 

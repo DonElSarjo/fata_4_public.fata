@@ -12,9 +12,14 @@ disabledAI = true;
 respawnOnStart = 1;
 respawnDelay = 10;
 respawnDialog = false;
+respawnButton = 0;
 enableDebugConsole = 1;
 respawn = "BASE";
-respawnTemplatesEast[] = {"MenuPosition", "Menuinventory", "Tickets"};
+
+respawnTemplates[] = {"MenuPosition", "Menuinventory", "Tickets"};
+reviveDelay = 6;		// The time it takes to revive a unit. Will be halved if you have a Medikit. (Default: 6 seconds.)
+reviveForceRespawnDelay = 3;	// The time it takes to force your respawn while incapacitated. (Default: 3 seconds.)
+reviveBleedOutDelay = 120;	// The time it takes for a unit to bleed out. (Default: 2 minutes.)
 
 #include "R3F_LOG\desc_include.h"
 #include "6RusLoudouts\defines.hpp"
@@ -130,7 +135,7 @@ class Params
 		title = ":: Inf. Wahrscheinlichkeit ::";
 		values[] = {0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100};
 		texts[] = {"0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100"};
-		default = 25;
+		default = 15;
 	};
     class MechArmSpawnPropablility //7
 	{

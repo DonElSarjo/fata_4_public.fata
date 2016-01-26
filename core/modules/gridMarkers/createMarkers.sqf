@@ -44,10 +44,10 @@ _cities = call SL_fnc_urbanAreas;
 
 
 	} forEach _buildings;
-
+/*
 	_trigE = createTrigger ["EmptyDetector", _cityPos ];
 	_trigE setTriggerActivation ["EAST", "PRESENT", false];
 	_trigE setTriggerArea [_cityRadA, _cityRadA, 0, false];
 	_trigE setTriggerStatements ["this", format["%1 call SL_fnc_createTriggers",_markers], ""];
-
+*/
 } forEach _cities;

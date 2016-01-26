@@ -7,6 +7,7 @@
 "SAFE" SetMarkerAlpha 0;
 "SAFE0" SetMarkerAlpha 0;
 
+
 //player loudout selection
 if (hasInterface) then
 {
@@ -23,19 +24,19 @@ if (paramsArray select 4 == 1) then
 	_FPSmrk setMarkerShape "ICON";
 	_FPSmrk setMarkerType "KIA";
 	_FPSmrk setMarkerColor "ColorBlack";
-	_FPSmrk setMarkerText "Server: n/a";
+	_FPSmrk setMarkerText "    Server: n/a";
 
 	_FPSmrk = createMarker ["fpsMarkerHC",[100, 200, 0]];
 	_FPSmrk setMarkerShape "ICON";
 	_FPSmrk setMarkerType "KIA";
 	_FPSmrk setMarkerColor "ColorBlack";
-	_FPSmrk setMarkerText "Headless Client: n/a";
+	_FPSmrk setMarkerText "    Headless Client: n/a";
 
 	_FPSmrk = createMarker ["aliveUnits",[100, 300, 0]];
 	_FPSmrk setMarkerShape "ICON";
 	_FPSmrk setMarkerType "KIA";
 	_FPSmrk setMarkerColor "ColorBlack";
-	_FPSmrk setMarkerText "Units alive: n/a";
+	_FPSmrk setMarkerText "    Units alive: n/a";
 };
 
 //server variables and mission functions
@@ -48,7 +49,7 @@ if (isServer) then
 		{
 			while {true} do
 			{
-				"fpsMarkerServer" setMarkerText format ["Server: %1 FPS", (floor diag_fps)];
+				"fpsMarkerServer" setMarkerText format ["    Server: %1 FPS", (floor diag_fps)];
 				sleep (paramsArray select 5);
 			}
 		}
@@ -130,7 +131,7 @@ if (!hasInterface && !isServer) then
 		{
 			while {true} do
 			{
-				"fpsMarkerHC" setMarkerText format ["Headless Client: %1 FPS", (floor diag_fps)];
+				"fpsMarkerHC" setMarkerText format ["    Headless Client: %1 FPS", (floor diag_fps)];
 				sleep (paramsArray select 5);
 			}
 		};
@@ -138,7 +139,7 @@ if (!hasInterface && !isServer) then
 		{
 			while {true} do
 			{
-				"aliveUnits" setMarkerText format ["Units alive: %1", count allUnits];
+				"aliveUnits" setMarkerText format ["    Units alive: %1", count allUnits];
 				sleep 5;
 			}
 		}
