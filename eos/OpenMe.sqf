@@ -1,23 +1,26 @@
 private ["_side","_fac1","_fac2"];
+
 _side = "independent";
 _fac1 = 5;//minor
 _fac2 = 5;//major
 
-InfPb = 50;
-AI_SpawnDis = 1000;
-MecArmPb = 75;
-CivProbability = 75;
+InfPb          = paramsArray select 6;
+MecArmPb       = paramsArray select 7;
+CivProbability = paramsArray select 8;
+AI_SpawnDis    = paramsArray select 9;
 
 EOS_Spawn     = compile preprocessfilelinenumbers "eos\core\eos_launch.sqf";
 Bastion_Spawn = compile preprocessfilelinenumbers "eos\core\b_launch.sqf";
 null          = [] execVM "eos\core\spawn_fnc.sqf";
+
 onplayerConnected {[] execVM "eos\Functions\EOS_Markers.sqf";};
 
 VictoryColor          = "colorGreen";
 hostileColor          = "colorRed";
 bastionColor          = "colorOrange";
+
 EOS_DAMAGE_MULTIPLIER = 1;
-EOS_KILLCOUNTER       = true;
+EOS_KILLCOUNTER       = false;
 /*
 null = [["civmkr1"],[2,1,CivProbability],[1,0,CivProbability],[0,0],[0],[0],[0,0],[7,1,500,CIVILIAN]] call EOS_Civ_Spawn;
 null = [["civmkr2"],[2,1,CivProbability],[1,0,CivProbability],[0,0],[0],[0],[0,0],[7,1,500,CIVILIAN]] call EOS_Civ_Spawn;

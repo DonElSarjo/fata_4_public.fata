@@ -1,7 +1,7 @@
 ////////////////
 //Mission Init//
 ////////////////
-[RESISTANCE,2,2] execVM "eos\OpenMe.sqf";
+
 //misc
 0 fadeRadio 0;
 "SAFE" SetMarkerAlpha 0;
@@ -111,6 +111,8 @@ if (!hasInterface && !isServer) then
 	hcPresent = true;
 	publicVariable "hcPresent"
 };
+
+[] execVM "eos\OpenMe.sqf";
 
 /*/////////////////
 //Insurgency init//
