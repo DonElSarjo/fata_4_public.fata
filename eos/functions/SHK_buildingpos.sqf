@@ -44,7 +44,8 @@
 
 private "_men";
 //(isServer) -> (!hasInterface && !isServer)
-if (!hasInterface && !isServer) then {
+if ((!hasInterface && !isServer) || {!hcPresent && isServer}) then
+{
 
   private "_sortArray";
   _sortArray = {

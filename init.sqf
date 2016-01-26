@@ -102,8 +102,16 @@ if (isServer) then
 	};
 
 };
-isHC = false;
-if (!hasInterface && !isServer) then {isHC = true};
+
+// HC switch
+hcPresent = false;
+
+if (!hasInterface && !isServer) then
+{
+	hcPresent = true;
+	publicVariable "hcPresent"
+};
+
 /*/////////////////
 //Insurgency init//
 ///////////////////
