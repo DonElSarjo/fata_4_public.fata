@@ -2,9 +2,6 @@ if (isNil "BIS_fnc_establishingShot_playing") then
 {
     Private ["_txt", "_towns","_iconArray", "_colorEast", "_playerPos"];
 
-    // deactivate ShackTac Hud, so it doesn't show up in the establishing shot
-    0 call fn_sthud_usermenu_changeMode;
-
     // create establishing shot
     _colorEast = EAST call BIS_fnc_sideColor;
     _playerPos = getPos (vehicle player);
@@ -59,8 +56,6 @@ if (isNil "BIS_fnc_establishingShot_playing") then
     // wait until the establishing shot is over/canceled
     waitUntil {!isnil "BIS_fnc_establishingShot_playing" && {!BIS_fnc_establishingShot_playing}};
 
-    // activate ShackTac Hud
-    3 call fn_sthud_usermenu_changeMode;
 };
 // load Attachment Selector
 _handle = createDialog 'DES_mission_dialog';
