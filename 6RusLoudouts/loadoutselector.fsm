@@ -1,0 +1,2066 @@
+/*%FSM<COMPILE "C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, loadoutselector">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"init_",0,250,-17.888641,2164.360596,72.111359,2214.360352,0.000000,"init" \n ""};
+item1[] = {"MSV_",4,218,-517.546021,725.105469,-427.546021,775.105530,0.000000,"MSV" \n ""};
+item2[] = {"FLORA",4,218,-494.971985,1526.900635,-404.971985,1576.900635,0.000000,"FLORA"};
+item3[] = {"FLORA_ALT_",4,218,-516.278687,2449.896484,-426.278687,2499.896484,0.000000,"FLORA ALT" \n ""};
+item4[] = {"FLORA_MOUNT_",4,218,-561.554932,3424.948486,-471.554932,3474.948486,0.000000,"FLORA MOUNT" \n ""};
+item5[] = {"Junction_",2,4346,-1104.171997,749.376953,-1014.172119,799.376892,0.000000,"Junction" \n ""};
+item6[] = {"sergent_",4,218,-1661.595825,448.207703,-1571.596069,498.207733,0.000000,"sergent" \n ""};
+item7[] = {"jr_sergeant_",4,218,-1662.725464,523.542969,-1572.725708,573.542969,0.000000,"jr sergeant" \n ""};
+item8[] = {"machinegunner_",4,218,-1666.186646,608.328369,-1576.186646,658.328369,0.000000,"machinegunner" \n ""};
+item9[] = {"marksman_",4,218,-1667.985229,685.841736,-1577.985229,735.841736,0.000000,"marksman" \n ""};
+item10[] = {"rifleman",4,218,-1670.441040,763.542908,-1580.441040,813.542908,0.000000,"rifleman"};
+item11[] = {"Give_Loudout",2,250,-1942.342285,928.249390,-1852.342285,978.249390,0.000000,"Give Loudout"};
+item12[] = {"medic",4,218,-1671.420776,910.690002,-1581.420776,960.690002,0.000000,"medic"};
+item13[] = {"grenadoer",4,218,-1672.614380,994.611938,-1582.614380,1044.611938,0.000000,"grenadoer"};
+item14[] = {"machinegunner_ass",4,218,-1686.264771,1079.577637,-1596.265015,1129.577637,0.000000,"machinegunner ass" \n ""};
+item15[] = {"Give_Loudout_1",2,250,-1939.756348,467.189880,-1849.756348,517.189880,0.000000,"Give Loudout"};
+item16[] = {"Give_Loudout_2",2,250,-1929.820557,541.830200,-1839.820557,591.830200,0.000000,"Give Loudout"};
+item17[] = {"Give_Loudout_3",2,250,-1929.734863,625.495544,-1839.734863,675.495544,0.000000,"Give Loudout"};
+item18[] = {"Give_Loudout_4",2,250,-1926.293945,707.077637,-1836.293945,757.077637,0.000000,"Give Loudout"};
+item19[] = {"Give_Loudout_5",2,250,-1930.735596,781.357056,-1840.735596,831.357056,0.000000,"Give Loudout"};
+item20[] = {"Give_Loudout_6",2,250,-1943.546387,1012.398376,-1853.546387,1062.398438,0.000000,"Give Loudout"};
+item21[] = {"Give_Loudout_7",2,250,-1954.302979,1102.161621,-1864.302979,1152.161621,0.000000,"Give Loudout"};
+item22[] = {"AT",4,218,-1668.674927,828.293274,-1578.674927,878.293274,0.000000,"AT"};
+item23[] = {"Give_Loudout_8",2,250,-1941.269531,847.338806,-1851.269531,897.338806,0.000000,"Give Loudout"};
+item24[] = {"sergent_",4,218,-1683.634888,1305.725098,-1593.635132,1355.725342,0.000000,"sergent" \n ""};
+item25[] = {"jr_sergeant_",4,218,-1684.764526,1381.060303,-1594.764771,1431.060547,0.000000,"jr sergeant" \n ""};
+item26[] = {"machinegunner_",4,218,-1688.225708,1465.845947,-1598.225708,1515.845947,0.000000,"machinegunner" \n ""};
+item27[] = {"marksman_",4,218,-1690.024292,1543.359375,-1600.024292,1593.359131,0.000000,"marksman" \n ""};
+item28[] = {"rifleman",4,218,-1692.479858,1621.060303,-1602.479858,1671.060303,0.000000,"rifleman"};
+item29[] = {"Give_Loudout_9",2,250,-1965.737305,1775.319580,-1875.737061,1825.319580,0.000000,"Give Loudout"};
+item30[] = {"medic",4,218,-1693.459839,1768.207764,-1603.459839,1818.207520,0.000000,"medic"};
+item31[] = {"grenadoer",4,218,-1694.653442,1852.129639,-1604.653442,1902.129639,0.000000,"grenadoer"};
+item32[] = {"machinegunner_ass",4,218,-1697.057007,1937.095215,-1607.057251,1987.095215,0.000000,"machinegunner ass" \n ""};
+item33[] = {"Give_Loudout_10",2,250,-1963.151367,1314.260254,-1873.151245,1364.260254,0.000000,"Give Loudout"};
+item34[] = {"Give_Loudout_11",2,250,-1959.963379,1373.155273,-1869.963501,1423.155273,0.000000,"Give Loudout"};
+item35[] = {"Give_Loudout_12",2,250,-1959.877686,1456.820557,-1869.877686,1506.820557,0.000000,"Give Loudout"};
+item36[] = {"Give_Loudout_13",2,250,-1956.437012,1538.402588,-1866.436768,1588.402588,0.000000,"Give Loudout"};
+item37[] = {"Give_Loudout_14",2,250,-1960.878662,1612.681885,-1870.878662,1662.681885,0.000000,"Give Loudout"};
+item38[] = {"Give_Loudout_15",2,250,-1966.941162,1859.468750,-1876.941162,1909.468750,0.000000,"Give Loudout"};
+item39[] = {"Give_Loudout_16",2,250,-1963.525879,1944.844238,-1873.526123,1994.844238,0.000000,"Give Loudout"};
+item40[] = {"AT",4,218,-1690.713745,1685.810791,-1600.713989,1735.810791,0.000000,"AT"};
+item41[] = {"Give_Loudout_17",2,250,-1964.664551,1694.408936,-1874.664429,1744.408936,0.000000,"Give Loudout"};
+item42[] = {"sergent_",4,218,-1690.834106,2251.310059,-1600.834473,2301.310303,0.000000,"sergent" \n ""};
+item43[] = {"jr_sergeant_",4,218,-1691.963867,2326.645508,-1601.963989,2376.645508,0.000000,"jr sergeant" \n ""};
+item44[] = {"machinegunner_",4,218,-1695.425049,2411.430908,-1605.424927,2461.430908,0.000000,"machinegunner" \n ""};
+item45[] = {"marksman_",4,218,-1697.223633,2488.944336,-1607.223633,2538.944336,0.000000,"marksman" \n ""};
+item46[] = {"rifleman",4,218,-1699.679199,2566.645508,-1609.679199,2616.645508,0.000000,"rifleman"};
+item47[] = {"Give_Loudout_18",2,250,-1978.879883,2716.515625,-1888.879883,2766.515625,0.000000,"Give Loudout"};
+item48[] = {"medic",4,218,-1700.659180,2713.792480,-1610.659180,2763.792480,0.000000,"medic"};
+item49[] = {"grenadoer",4,218,-1701.852783,2797.714355,-1611.852783,2847.714355,0.000000,"grenadoer"};
+item50[] = {"machinegunner_ass",4,218,-1704.256348,2882.680176,-1614.256592,2932.680176,0.000000,"machinegunner ass" \n ""};
+item51[] = {"Give_Loudout_19",2,250,-1976.294067,2255.456299,-1886.294067,2305.456299,0.000000,"Give Loudout"};
+item52[] = {"Give_Loudout_20",2,250,-1966.358154,2330.096680,-1876.358154,2380.096680,0.000000,"Give Loudout"};
+item53[] = {"Give_Loudout_21",2,250,-1966.272339,2413.761963,-1876.272339,2463.761963,0.000000,"Give Loudout"};
+item54[] = {"Give_Loudout_22",2,250,-1962.831421,2495.343994,-1872.831421,2545.343994,0.000000,"Give Loudout"};
+item55[] = {"Give_Loudout_23",2,250,-1967.273193,2569.623535,-1877.273193,2619.623535,0.000000,"Give Loudout"};
+item56[] = {"Give_Loudout_24",2,250,-1983.835449,2796.913086,-1893.835449,2846.913086,0.000000,"Give Loudout"};
+item57[] = {"Give_Loudout_25",2,250,-1976.668823,2886.040527,-1886.668823,2936.040527,0.000000,"Give Loudout"};
+item58[] = {"AT",4,218,-1697.913086,2631.395752,-1607.913208,2681.395752,0.000000,"AT"};
+item59[] = {"Give_Loudout_26",2,250,-1977.807251,2635.605225,-1887.807251,2685.605225,0.000000,"Give Loudout"};
+item60[] = {"sergent_",4,218,-1703.564941,3205.513184,-1613.565186,3255.513184,0.000000,"sergent" \n ""};
+item61[] = {"jr_sergeant_",4,218,-1704.694702,3280.848633,-1614.694824,3330.848633,0.000000,"jr sergeant" \n ""};
+item62[] = {"machinegunner_",4,218,-1708.155762,3365.633789,-1618.155762,3415.633789,0.000000,"machinegunner" \n ""};
+item63[] = {"marksman_",4,218,-1709.954468,3443.147461,-1619.954468,3493.147461,0.000000,"marksman" \n ""};
+item64[] = {"rifleman",4,218,-1712.410156,3520.848633,-1622.410034,3570.848633,0.000000,"rifleman"};
+item65[] = {"Give_Loudout_27",2,250,-1989.170166,3668.414795,-1899.170288,3718.414795,0.000000,"Give Loudout"};
+item66[] = {"medic",4,218,-1713.389893,3667.995605,-1623.389893,3717.995605,0.000000,"medic"};
+item67[] = {"grenadoer",4,218,-1714.583618,3751.917480,-1624.583618,3801.917480,0.000000,"grenadoer"};
+item68[] = {"machinegunner_ass",4,218,-1716.987183,3836.883301,-1626.987305,3886.883301,0.000000,"machinegunner ass" \n ""};
+item69[] = {"Give_Loudout_28",2,250,-1986.584229,3207.355469,-1896.584351,3257.355469,0.000000,"Give Loudout"};
+item70[] = {"Give_Loudout_29",2,250,-1976.648193,3281.995850,-1886.648315,3331.995850,0.000000,"Give Loudout"};
+item71[] = {"Give_Loudout_30",2,250,-1976.562744,3365.661133,-1886.562622,3415.661133,0.000000,"Give Loudout"};
+item72[] = {"Give_Loudout_31",2,250,-1973.121826,3447.243164,-1883.121704,3497.243164,0.000000,"Give Loudout"};
+item73[] = {"Give_Loudout_32",2,250,-1977.563232,3521.522461,-1887.563354,3571.522705,0.000000,"Give Loudout"};
+item74[] = {"Give_Loudout_33",2,250,-1991.828369,3758.379883,-1901.828247,3808.379883,0.000000,"Give Loudout"};
+item75[] = {"Give_Loudout_34",2,250,-1986.959229,3837.939453,-1896.959106,3887.939453,0.000000,"Give Loudout"};
+item76[] = {"AT",4,218,-1710.644043,3585.598633,-1620.644043,3635.598633,0.000000,"AT"};
+item77[] = {"Give_Loudout_35",2,250,-1988.097412,3587.504395,-1898.097534,3637.504395,0.000000,"Give Loudout"};
+item78[] = {"Junction__1",2,250,-1080.908936,1564.539307,-990.908936,1614.539307,0.000000,"Junction" \n ""};
+item79[] = {"Junction__2",2,250,-1100.608765,2459.728760,-1010.608826,2509.728760,0.000000,"Junction" \n ""};
+item80[] = {"Junction__3",2,250,-1124.330078,3439.712402,-1034.330078,3489.712402,0.000000,"Junction" \n ""};
+item81[] = {"AA__",4,218,-1712.549561,3941.354492,-1622.549438,3991.354492,0.000000,"AA" \n "" \n ""};
+item82[] = {"Give_Loudout_36",2,250,-1966.494629,3944.833252,-1876.494629,3994.833252,0.000000,"Give Loudout"};
+item83[] = {"AA__",4,218,-1720.040771,2984.041260,-1630.040649,3034.041260,0.000000,"AA" \n "" \n ""};
+item84[] = {"Give_Loudout_37",2,250,-1973.985840,2987.520020,-1883.986206,3037.520020,0.000000,"Give Loudout"};
+item85[] = {"AA__",4,218,-1703.195435,2034.024902,-1613.195313,2084.024902,0.000000,"AA" \n "" \n ""};
+item86[] = {"Give_Loudout_38",2,250,-1957.140503,2037.503662,-1867.140869,2087.503662,0.000000,"Give Loudout"};
+item87[] = {"AA__",4,218,-1691.157104,1187.092041,-1601.156982,1237.092041,0.000000,"AA" \n "" \n ""};
+item88[] = {"Give_Loudout_39",2,250,-1945.102539,1190.570801,-1855.102539,1240.570801,0.000000,"Give Loudout"};
+item89[] = {"Junction__4",2,250,-1045.763794,4522.316895,-955.763916,4572.316895,0.000000,"Junction" \n ""};
+item90[] = {"sergent_",4,218,-1603.187500,4221.147949,-1513.187622,4271.147949,0.000000,"sergent" \n ""};
+item91[] = {"jr_sergeant_",4,218,-1604.316895,4296.482910,-1514.317505,4346.482910,0.000000,"jr sergeant" \n ""};
+item92[] = {"machinegunner_",4,218,-1607.778320,4381.268555,-1517.778442,4431.268555,0.000000,"machinegunner" \n ""};
+item93[] = {"marksman_",4,218,-1609.576660,4458.781738,-1519.576782,4508.781738,0.000000,"marksman" \n ""};
+item94[] = {"rifleman",4,218,-1612.032715,4536.482910,-1522.032837,4586.482910,0.000000,"rifleman"};
+item95[] = {"Give_Loudout_40",2,250,-1883.934204,4701.189453,-1793.934204,4751.189453,0.000000,"Give Loudout"};
+item96[] = {"medic",4,218,-1613.012207,4683.630371,-1523.012329,4733.630371,0.000000,"medic"};
+item97[] = {"grenadoer",4,218,-1614.206055,4767.552246,-1524.206177,4817.552246,0.000000,"grenadoer"};
+item98[] = {"machinegunner_ass",4,218,-1627.856445,4852.518066,-1537.856567,4902.518066,0.000000,"machinegunner ass" \n ""};
+item99[] = {"Give_Loudout_41",2,250,-1881.348267,4240.129883,-1791.348267,4290.129883,0.000000,"Give Loudout"};
+item100[] = {"Give_Loudout_42",2,250,-1871.412231,4314.770508,-1781.412231,4364.770508,0.000000,"Give Loudout"};
+item101[] = {"Give_Loudout_43",2,250,-1871.326782,4398.435547,-1781.326782,4448.435547,0.000000,"Give Loudout"};
+item102[] = {"Give_Loudout_44",2,250,-1867.885864,4480.018066,-1777.885864,4530.018066,0.000000,"Give Loudout"};
+item103[] = {"Give_Loudout_45",2,250,-1872.327271,4554.297363,-1782.327271,4604.297363,0.000000,"Give Loudout"};
+item104[] = {"Give_Loudout_46",2,250,-1885.138306,4785.338379,-1795.138306,4835.338379,0.000000,"Give Loudout"};
+item105[] = {"Give_Loudout_47",2,250,-1895.894653,4875.102051,-1805.894653,4925.102051,0.000000,"Give Loudout"};
+item106[] = {"AT",4,218,-1610.266602,4601.233398,-1520.266724,4651.233398,0.000000,"AT"};
+item107[] = {"Give_Loudout_48",2,250,-1882.861450,4620.278809,-1792.861450,4670.278809,0.000000,"Give Loudout"};
+item108[] = {"AA__",4,218,-1632.748535,4960.032227,-1542.748657,5010.032227,0.000000,"AA" \n "" \n ""};
+item109[] = {"Give_Loudout_49",2,250,-1886.694458,4963.511230,-1796.694458,5013.511230,0.000000,"Give Loudout"};
+item110[] = {"FLORA_MOUNT__1",4,218,-545.980469,4511.279297,-455.980469,4561.279297,0.000000,"FLORA MOUNT" \n ""};
+link0[] = {0,1};
+link1[] = {0,2};
+link2[] = {0,3};
+link3[] = {0,4};
+link4[] = {0,110};
+link5[] = {1,5};
+link6[] = {2,78};
+link7[] = {3,79};
+link8[] = {4,80};
+link9[] = {5,6};
+link10[] = {5,7};
+link11[] = {5,8};
+link12[] = {5,9};
+link13[] = {5,10};
+link14[] = {5,12};
+link15[] = {5,13};
+link16[] = {5,14};
+link17[] = {5,22};
+link18[] = {5,87};
+link19[] = {6,15};
+link20[] = {7,16};
+link21[] = {8,17};
+link22[] = {9,18};
+link23[] = {10,19};
+link24[] = {12,11};
+link25[] = {13,20};
+link26[] = {14,21};
+link27[] = {22,23};
+link28[] = {24,33};
+link29[] = {25,34};
+link30[] = {26,35};
+link31[] = {27,36};
+link32[] = {28,37};
+link33[] = {30,29};
+link34[] = {31,38};
+link35[] = {32,39};
+link36[] = {40,41};
+link37[] = {42,51};
+link38[] = {43,52};
+link39[] = {44,53};
+link40[] = {45,54};
+link41[] = {46,55};
+link42[] = {48,47};
+link43[] = {49,56};
+link44[] = {50,57};
+link45[] = {58,59};
+link46[] = {60,69};
+link47[] = {61,70};
+link48[] = {62,71};
+link49[] = {63,72};
+link50[] = {64,73};
+link51[] = {66,65};
+link52[] = {67,74};
+link53[] = {68,75};
+link54[] = {76,77};
+link55[] = {78,24};
+link56[] = {78,25};
+link57[] = {78,26};
+link58[] = {78,27};
+link59[] = {78,28};
+link60[] = {78,30};
+link61[] = {78,31};
+link62[] = {78,32};
+link63[] = {78,40};
+link64[] = {78,85};
+link65[] = {79,42};
+link66[] = {79,43};
+link67[] = {79,44};
+link68[] = {79,45};
+link69[] = {79,46};
+link70[] = {79,48};
+link71[] = {79,49};
+link72[] = {79,50};
+link73[] = {79,58};
+link74[] = {79,83};
+link75[] = {80,60};
+link76[] = {80,61};
+link77[] = {80,62};
+link78[] = {80,63};
+link79[] = {80,64};
+link80[] = {80,66};
+link81[] = {80,67};
+link82[] = {80,68};
+link83[] = {80,76};
+link84[] = {80,81};
+link85[] = {81,82};
+link86[] = {83,84};
+link87[] = {85,86};
+link88[] = {87,88};
+link89[] = {89,90};
+link90[] = {89,91};
+link91[] = {89,92};
+link92[] = {89,93};
+link93[] = {89,94};
+link94[] = {89,96};
+link95[] = {89,97};
+link96[] = {89,98};
+link97[] = {89,106};
+link98[] = {89,108};
+link99[] = {90,99};
+link100[] = {91,100};
+link101[] = {92,101};
+link102[] = {93,102};
+link103[] = {94,103};
+link104[] = {96,95};
+link105[] = {97,104};
+link106[] = {98,105};
+link107[] = {106,107};
+link108[] = {108,109};
+link109[] = {110,89};
+globals[] = {0.000000,0,0,0,0,640,480,1,128,6316128,1,-2442.813232,-566.765625,5374.137695,3301.102539,800,884,1};
+window[] = {2,-1,-1,-1,-1,863,2024,3464,104,3,818};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "loadoutselector";
+        class States
+        {
+                /*%FSM<STATE "init_">*/
+                class init_
+                {
+                        name = "init_";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"_unit  = _this select 0;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "FLORA">*/
+                                class FLORA
+                                {
+                                        itemno = 2;
+                                        priority = 0.000000;
+                                        to="Junction__1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"paramsarray select 0 == 2;"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "FLORA_ALT_">*/
+                                class FLORA_ALT_
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="Junction__2";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"paramsarray select 0 == 3"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "FLORA_MOUNT_">*/
+                                class FLORA_MOUNT_
+                                {
+                                        itemno = 4;
+                                        priority = 0.000000;
+                                        to="Junction__3";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"paramsarray select 0 == 4"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "FLORA_MOUNT__1">*/
+                                class FLORA_MOUNT__1
+                                {
+                                        itemno = 110;
+                                        priority = 0.000000;
+                                        to="Junction__4";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"paramsarray select 0 == 5"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "MSV_">*/
+                                class MSV_
+                                {
+                                        itemno = 1;
+                                        priority = 0.000000;
+                                        to="Junction_";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"paramsarray select 0 == 1;"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Junction_">*/
+                class Junction_
+                {
+                        name = "Junction_";
+                        itemno = 5;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "medic">*/
+                                class medic
+                                {
+                                        itemno = 12;
+                                        priority = 0.000000;
+                                        to="Give_Loudout";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_medic"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "jr_sergeant_">*/
+                                class jr_sergeant_
+                                {
+                                        itemno = 7;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_2";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_junior_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_">*/
+                                class machinegunner_
+                                {
+                                        itemno = 8;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_3";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "marksman_">*/
+                                class marksman_
+                                {
+                                        itemno = 9;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_4";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_marksman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "rifleman">*/
+                                class rifleman
+                                {
+                                        itemno = 10;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_5";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_rifleman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "sergent_">*/
+                                class sergent_
+                                {
+                                        itemno = 6;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_1";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "grenadoer">*/
+                                class grenadoer
+                                {
+                                        itemno = 13;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_6";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_grenadier"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_ass">*/
+                                class machinegunner_ass
+                                {
+                                        itemno = 14;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_7";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner_assistant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AT">*/
+                                class AT
+                                {
+                                        itemno = 22;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_8";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_at"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AA__">*/
+                                class AA__
+                                {
+                                        itemno = 87;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_39";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_emr_aa"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout">*/
+                class Give_Loudout
+                {
+                        name = "Give_Loudout";
+                        itemno = 11;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMedic = " \n
+                         "[" \n
+                         "	""des_EMRMedicAK74m""," \n
+                         "	""des_EMRMedicAK105""," \n
+                         "	""des_EMRMedicAK74""," \n
+                         "	""des_EMRMedicAKS74""," \n
+                         "	""des_EMRMedicAKS74U""," \n
+                         "	""des_EMRMedicAK12""," \n
+                         "	""des_EMRMedicAKU12""," \n
+                         "	""des_EMRMedicAKM""," \n
+                         "	""des_EMRMedicAKMS""," \n
+                         "	""des_EMRMedicAK47""," \n
+                         "	""des_EMRMedicAK103""," \n
+                         "	""des_EMRMedicAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMedic;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_1">*/
+                class Give_Loudout_1
+                {
+                        name = "Give_Loudout_1";
+                        itemno = 15;
+                        init = /*%FSM<STATEINIT""">*/"respawnArraySergeant = " \n
+                         "[" \n
+                         "	""des_EMRSergeantAK74m""," \n
+                         "	""des_EMRSergeantAK105""," \n
+                         "	""des_EMRSergeantAK74""," \n
+                         "	""des_EMRSergeantAKS74""," \n
+                         "	""des_EMRSergeantAKS74U""," \n
+                         "	""des_EMRSergeantAK12""," \n
+                         "	""des_EMRSergeantAKU12""," \n
+                         "	""des_EMRSergeantAKM""," \n
+                         "	""des_EMRSergeantAKMS""," \n
+                         "	""des_EMRSergeantAK47""," \n
+                         "	""des_EMRSergeantAK103""," \n
+                         "	""des_EMRSergeantAK104""" \n
+                         "	" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArraySergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_2">*/
+                class Give_Loudout_2
+                {
+                        name = "Give_Loudout_2";
+                        itemno = 16;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayJuniorSergeant = " \n
+                         "[" \n
+                         "	""des_EMRJuniorSergeantAK74mGP25""," \n
+                         "	""des_EMRJuniorSergeantAK12GL""," \n
+                         "	""des_EMRJuniorSergeantAKS74GL""," \n
+                         "	""des_EMRJuniorSergeantAKMgp25""," \n
+                         "	""des_EMRJuniorSergeantAKMSgp25""," \n
+                         "	""des_EMRJuniorSergeantAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayJuniorSergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_3">*/
+                class Give_Loudout_3
+                {
+                        name = "Give_Loudout_3";
+                        itemno = 17;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMachinegunner = " \n
+                         "[" \n
+                         "	""des_EMRMachinegunnerPKP""," \n
+                         "	""des_EMRMachinegunnerPKM""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMachinegunner;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_4">*/
+                class Give_Loudout_4
+                {
+                        name = "Give_Loudout_4";
+                        itemno = 18;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMarksman = " \n
+                         "[" \n
+                         "	""des_EMRDMRSVDm""," \n
+                         "	""des_EMRDMRSVDs""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMarksman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_5">*/
+                class Give_Loudout_5
+                {
+                        name = "Give_Loudout_5";
+                        itemno = 19;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayRifleman = " \n
+                         "[" \n
+                         "	""des_EMRRiflemanAK74m""," \n
+                         "	""des_EMRRiflemanAK105""," \n
+                         "	""des_EMRRiflemanAK74""," \n
+                         "	""des_EMRRiflemanAKS74""," \n
+                         "	""des_EMRRiflemanAKS74U""," \n
+                         "	""des_EMRRiflemanAK12""," \n
+                         "	""des_EMRRiflemanAKU12""," \n
+                         "	""des_EMRRiflemanAKM""," \n
+                         "	""des_EMRRiflemanAKMS""," \n
+                         "	""des_EMRRiflemanAK47""," \n
+                         "	""des_EMRRiflemanAK103""," \n
+                         "	""des_EMRRiflemanAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayRifleman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_6">*/
+                class Give_Loudout_6
+                {
+                        name = "Give_Loudout_6";
+                        itemno = 20;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayGrenadier = " \n
+                         "[" \n
+                         "	""des_EMRGrenadierAK74mGP25""," \n
+                         "	""des_EMRGrenadierAK12GL""," \n
+                         "	""des_EMRGrenadierAKS74GL""," \n
+                         "	""des_EMRGrenadierAKMgp25""," \n
+                         "	""des_EMRGrenadierAKMSgp25""," \n
+                         "	""des_EMRGrenadierAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayGrenadier;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_7">*/
+                class Give_Loudout_7
+                {
+                        name = "Give_Loudout_7";
+                        itemno = 21;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayLMG = " \n
+                         "[" \n
+                         "	""des_EMRLmachinegunnerRPK""," \n
+                         "	""des_EMRLmachinegunnerRPK12""," \n
+                         "	""des_EMRLmachinegunnerRPK74""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayLMG;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_8">*/
+                class Give_Loudout_8
+                {
+                        name = "Give_Loudout_8";
+                        itemno = 23;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAT = " \n
+                         "[" \n
+                         "	""des_EMRAtAK74m""," \n
+                         "	""des_EMRAtAK105""," \n
+                         "	""des_EMRAtAK74""," \n
+                         "	""des_EMRAtAKS74""," \n
+                         "	""des_EMRAtAKS74U""," \n
+                         "	""des_EMRAtAK12""," \n
+                         "	""des_EMRAtAKU12""," \n
+                         "	""des_EMRAtAKM""," \n
+                         "	""des_EMRAtAKMS""," \n
+                         "	""des_EMRAtAK47""," \n
+                         "	""des_EMRAtAK103""," \n
+                         "	""des_EMRAtAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAT;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_9">*/
+                class Give_Loudout_9
+                {
+                        name = "Give_Loudout_9";
+                        itemno = 29;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMedic = " \n
+                         "[" \n
+                         "	""des_FloraMedicAK74m""," \n
+                         "	""des_FloraMedicAK105""," \n
+                         "	""des_FloraMedicAK74""," \n
+                         "	""des_FloraMedicAKS74""," \n
+                         "	""des_FloraMedicAKS74U""," \n
+                         "	""des_FloraMedicAK12""," \n
+                         "	""des_FloraMedicAKU12""," \n
+                         "	""des_FloraMedicAKM""," \n
+                         "	""des_FloraMedicAKMS""," \n
+                         "	""des_FloraMedicAK47""," \n
+                         "	""des_FloraMedicAK103""," \n
+                         "	""des_FloraMedicAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMedic;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_10">*/
+                class Give_Loudout_10
+                {
+                        name = "Give_Loudout_10";
+                        itemno = 33;
+                        init = /*%FSM<STATEINIT""">*/"respawnArraySergeant = " \n
+                         "[" \n
+                         "	""des_FloraSergeantAK74m""," \n
+                         "	""des_FloraSergeantAK105""," \n
+                         "	""des_FloraSergeantAK74""," \n
+                         "	""des_FloraSergeantAKS74""," \n
+                         "	""des_FloraSergeantAKS74U""," \n
+                         "	""des_FloraSergeantAK12""," \n
+                         "	""des_FloraSergeantAKU12""," \n
+                         "	""des_FloraSergeantAKM""," \n
+                         "	""des_FloraSergeantAKMS""," \n
+                         "	""des_FloraSergeantAK47""," \n
+                         "	""des_FloraSergeantAK103""," \n
+                         "	""des_FloraSergeantAK104""" \n
+                         "	" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArraySergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_11">*/
+                class Give_Loudout_11
+                {
+                        name = "Give_Loudout_11";
+                        itemno = 34;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayJuniorSergeant = " \n
+                         "[" \n
+                         "	""des_FloraJuniorSergeantAK74mGP25""," \n
+                         "	""des_FloraJuniorSergeantAK12GL""," \n
+                         "	""des_FloraJuniorSergeantAKS74GL""," \n
+                         "	""des_FloraJuniorSergeantAKMgp25""," \n
+                         "	""des_FloraJuniorSergeantAKMSgp25""," \n
+                         "	""des_FloraJuniorSergeantAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayJuniorSergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_12">*/
+                class Give_Loudout_12
+                {
+                        name = "Give_Loudout_12";
+                        itemno = 35;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMachinegunner = " \n
+                         "[" \n
+                         "	""des_FloraMachinegunnerPKP""," \n
+                         "	""des_FloraMachinegunnerPKM""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMachinegunner;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_13">*/
+                class Give_Loudout_13
+                {
+                        name = "Give_Loudout_13";
+                        itemno = 36;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMarksman = " \n
+                         "[" \n
+                         "	""des_FloraDMRSVDm""," \n
+                         "	""des_FloraDMRSVDs""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMarksman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_14">*/
+                class Give_Loudout_14
+                {
+                        name = "Give_Loudout_14";
+                        itemno = 37;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayRifleman = " \n
+                         "[" \n
+                         "	""des_FloraRiflemanAK74m""," \n
+                         "	""des_FloraRiflemanAK105""," \n
+                         "	""des_FloraRiflemanAK74""," \n
+                         "	""des_FloraRiflemanAKS74""," \n
+                         "	""des_FloraRiflemanAKS74U""," \n
+                         "	""des_FloraRiflemanAK12""," \n
+                         "	""des_FloraRiflemanAKU12""," \n
+                         "	""des_FloraRiflemanAKM""," \n
+                         "	""des_FloraRiflemanAKMS""," \n
+                         "	""des_FloraRiflemanAK47""," \n
+                         "	""des_FloraRiflemanAK103""," \n
+                         "	""des_FloraRiflemanAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayRifleman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_15">*/
+                class Give_Loudout_15
+                {
+                        name = "Give_Loudout_15";
+                        itemno = 38;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayGrenadier = " \n
+                         "[" \n
+                         "	""des_FloraGrenadierAK74mGP25""," \n
+                         "	""des_FloraGrenadierAK12GL""," \n
+                         "	""des_FloraGrenadierAKS74GL""," \n
+                         "	""des_FloraGrenadierAKMgp25""," \n
+                         "	""des_FloraGrenadierAKMSgp25""," \n
+                         "	""des_FloraGrenadierAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayGrenadier;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_16">*/
+                class Give_Loudout_16
+                {
+                        name = "Give_Loudout_16";
+                        itemno = 39;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayLMG = " \n
+                         "[" \n
+                         "	""des_FloraLmachinegunnerRPK""," \n
+                         "	""des_FloraLmachinegunnerRPK12""," \n
+                         "	""des_FloraLmachinegunnerRPK74""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayLMG;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_17">*/
+                class Give_Loudout_17
+                {
+                        name = "Give_Loudout_17";
+                        itemno = 41;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAa = " \n
+                         "[" \n
+                         "	""des_FloraAtAK74m""," \n
+                         "	""des_FloraAtAK105""," \n
+                         "	""des_FloraAtAK74""," \n
+                         "	""des_FloraAtAKS74""," \n
+                         "	""des_FloraAtAKS74U""," \n
+                         "	""des_FloraAtAK12""," \n
+                         "	""des_FloraAtAKU12""," \n
+                         "	""des_FloraAtAKM""," \n
+                         "	""des_FloraAtAKMS""," \n
+                         "	""des_FloraAtAK47""," \n
+                         "	""des_FloraAtAK103""," \n
+                         "	""des_FloraAtAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAa;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_18">*/
+                class Give_Loudout_18
+                {
+                        name = "Give_Loudout_18";
+                        itemno = 47;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMedic = " \n
+                         "[" \n
+                         "	""des_FloraAltMedicAK74m""," \n
+                         "	""des_FloraAltMedicAK105""," \n
+                         "	""des_FloraAltMedicAK74""," \n
+                         "	""des_FloraAltMedicAKS74""," \n
+                         "	""des_FloraAltMedicAKS74U""," \n
+                         "	""des_FloraAltMedicAK12""," \n
+                         "	""des_FloraAltMedicAKU12""," \n
+                         "	""des_FloraAltMedicAKM""," \n
+                         "	""des_FloraAltMedicAKMS""," \n
+                         "	""des_FloraAltMedicAK47""," \n
+                         "	""des_FloraAltMedicAK103""," \n
+                         "	""des_FloraAltMedicAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMedic;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_19">*/
+                class Give_Loudout_19
+                {
+                        name = "Give_Loudout_19";
+                        itemno = 51;
+                        init = /*%FSM<STATEINIT""">*/"respawnArraySergeant = " \n
+                         "[" \n
+                         "	""des_FloraAltSergeantAK74m""," \n
+                         "	""des_FloraAltSergeantAK105""," \n
+                         "	""des_FloraAltSergeantAK74""," \n
+                         "	""des_FloraAltSergeantAKS74""," \n
+                         "	""des_FloraAltSergeantAKS74U""," \n
+                         "	""des_FloraAltSergeantAK12""," \n
+                         "	""des_FloraAltSergeantAKU12""," \n
+                         "	""des_FloraAltSergeantAKM""," \n
+                         "	""des_FloraAltSergeantAKMS""," \n
+                         "	""des_FloraAltSergeantAK47""," \n
+                         "	""des_FloraAltSergeantAK103""," \n
+                         "	""des_FloraAltSergeantAK104""" \n
+                         "	" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArraySergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_20">*/
+                class Give_Loudout_20
+                {
+                        name = "Give_Loudout_20";
+                        itemno = 52;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayJuniorSergeant = " \n
+                         "[" \n
+                         "	""des_FloraAltJuniorSergeantAK74mGP25""," \n
+                         "	""des_FloraAltJuniorSergeantAK12GL""," \n
+                         "	""des_FloraAltJuniorSergeantAKS74GL""," \n
+                         "	""des_FloraAltJuniorSergeantAKMgp25""," \n
+                         "	""des_FloraAltJuniorSergeantAKMSgp25""," \n
+                         "	""des_FloraAltJuniorSergeantAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayJuniorSergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_21">*/
+                class Give_Loudout_21
+                {
+                        name = "Give_Loudout_21";
+                        itemno = 53;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMachinegunner = " \n
+                         "[" \n
+                         "	""des_FloraAltMachinegunnerPKP""," \n
+                         "	""des_FloraAltMachinegunnerPKM""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMachinegunner;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_22">*/
+                class Give_Loudout_22
+                {
+                        name = "Give_Loudout_22";
+                        itemno = 54;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMarksman = " \n
+                         "[" \n
+                         "	""des_FloraAltDMRSVDm""," \n
+                         "	""des_FloraAltDMRSVDs""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMarksman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_23">*/
+                class Give_Loudout_23
+                {
+                        name = "Give_Loudout_23";
+                        itemno = 55;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayRifleman = " \n
+                         "[" \n
+                         "	""des_FloraAltRiflemanAK74m""," \n
+                         "	""des_FloraAltRiflemanAK105""," \n
+                         "	""des_FloraAltRiflemanAK74""," \n
+                         "	""des_FloraAltRiflemanAKS74""," \n
+                         "	""des_FloraAltRiflemanAKS74U""," \n
+                         "	""des_FloraAltRiflemanAK12""," \n
+                         "	""des_FloraAltRiflemanAKU12""," \n
+                         "	""des_FloraAltRiflemanAKM""," \n
+                         "	""des_FloraAltRiflemanAKMS""," \n
+                         "	""des_FloraAltRiflemanAK47""," \n
+                         "	""des_FloraAltRiflemanAK103""," \n
+                         "	""des_FloraAltRiflemanAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayRifleman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_24">*/
+                class Give_Loudout_24
+                {
+                        name = "Give_Loudout_24";
+                        itemno = 56;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayGrenadier = " \n
+                         "[" \n
+                         "	""des_FloraAltGrenadierAK74mGP25""," \n
+                         "	""des_FloraAltGrenadierAK12GL""," \n
+                         "	""des_FloraAltGrenadierAKS74GL""," \n
+                         "	""des_FloraAltGrenadierAKMgp25""," \n
+                         "	""des_FloraAltGrenadierAKMSgp25""," \n
+                         "	""des_FloraAltGrenadierAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayGrenadier;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_25">*/
+                class Give_Loudout_25
+                {
+                        name = "Give_Loudout_25";
+                        itemno = 57;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayLMG = " \n
+                         "[" \n
+                         "	""des_FloraAltLmachinegunnerRPK""," \n
+                         "	""des_FloraAltLmachinegunnerRPK12""," \n
+                         "	""des_FloraAltLmachinegunnerRPK74""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayLMG;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_26">*/
+                class Give_Loudout_26
+                {
+                        name = "Give_Loudout_26";
+                        itemno = 59;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAa = " \n
+                         "[" \n
+                         "	""des_FloraAltAtAK74m""," \n
+                         "	""des_FloraAltAtAK105""," \n
+                         "	""des_FloraAltAtAK74""," \n
+                         "	""des_FloraAltAtAKS74""," \n
+                         "	""des_FloraAltAtAKS74U""," \n
+                         "	""des_FloraAltAtAK12""," \n
+                         "	""des_FloraAltAtAKU12""," \n
+                         "	""des_FloraAltAtAKM""," \n
+                         "	""des_FloraAltAtAKMS""," \n
+                         "	""des_FloraAltAtAK47""," \n
+                         "	""des_FloraAltAtAK103""," \n
+                         "	""des_FloraAltAtAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAa;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_27">*/
+                class Give_Loudout_27
+                {
+                        name = "Give_Loudout_27";
+                        itemno = 65;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMedic = " \n
+                         "[" \n
+                         "	""des_FloraMountainMedicAK74m""," \n
+                         "	""des_FloraMountainMedicAK105""," \n
+                         "	""des_FloraMountainMedicAK74""," \n
+                         "	""des_FloraMountainMedicAKS74""," \n
+                         "	""des_FloraMountainMedicAKS74U""," \n
+                         "	""des_FloraMountainMedicAK12""," \n
+                         "	""des_FloraMountainMedicAKU12""," \n
+                         "	""des_FloraMountainMedicAKM""," \n
+                         "	""des_FloraMountainMedicAKMS""," \n
+                         "	""des_FloraMountainMedicAK47""," \n
+                         "	""des_FloraMountainMedicAK103""," \n
+                         "	""des_FloraMountainMedicAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMedic;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_28">*/
+                class Give_Loudout_28
+                {
+                        name = "Give_Loudout_28";
+                        itemno = 69;
+                        init = /*%FSM<STATEINIT""">*/"respawnArraySergeant = " \n
+                         "[" \n
+                         "	""des_FloraMountainSergeantAK74m""," \n
+                         "	""des_FloraMountainSergeantAK105""," \n
+                         "	""des_FloraMountainSergeantAK74""," \n
+                         "	""des_FloraMountainSergeantAKS74""," \n
+                         "	""des_FloraMountainSergeantAKS74U""," \n
+                         "	""des_FloraMountainSergeantAK12""," \n
+                         "	""des_FloraMountainSergeantAKU12""," \n
+                         "	""des_FloraMountainSergeantAKM""," \n
+                         "	""des_FloraMountainSergeantAKMS""," \n
+                         "	""des_FloraMountainSergeantAK47""," \n
+                         "	""des_FloraMountainSergeantAK103""," \n
+                         "	""des_FloraMountainSergeantAK104""" \n
+                         "	" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArraySergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_29">*/
+                class Give_Loudout_29
+                {
+                        name = "Give_Loudout_29";
+                        itemno = 70;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayJuniorSergeant = " \n
+                         "[" \n
+                         "	""des_FloraMountainJuniorSergeantAK74mGP25""," \n
+                         "	""des_FloraMountainJuniorSergeantAK12GL""," \n
+                         "	""des_FloraMountainJuniorSergeantAKS74GL""," \n
+                         "	""des_FloraMountainJuniorSergeantAKMgp25""," \n
+                         "	""des_FloraMountainJuniorSergeantAKMSgp25""," \n
+                         "	""des_FloraMountainJuniorSergeantAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayJuniorSergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_30">*/
+                class Give_Loudout_30
+                {
+                        name = "Give_Loudout_30";
+                        itemno = 71;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMachinegunner = " \n
+                         "[" \n
+                         "	""des_FloraMountainMachinegunnerPKP""," \n
+                         "	""des_FloraMountainMachinegunnerPKM""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMachinegunner;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_31">*/
+                class Give_Loudout_31
+                {
+                        name = "Give_Loudout_31";
+                        itemno = 72;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMarksman = " \n
+                         "[" \n
+                         "	""des_FloraMountainDMRSVDm""," \n
+                         "	""des_FloraMountainDMRSVDs""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMarksman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_32">*/
+                class Give_Loudout_32
+                {
+                        name = "Give_Loudout_32";
+                        itemno = 73;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayRifleman = " \n
+                         "[" \n
+                         "	""des_FloraMountainRiflemanAK74m""," \n
+                         "	""des_FloraMountainRiflemanAK105""," \n
+                         "	""des_FloraMountainRiflemanAK74""," \n
+                         "	""des_FloraMountainRiflemanAKS74""," \n
+                         "	""des_FloraMountainRiflemanAKS74U""," \n
+                         "	""des_FloraMountainRiflemanAK12""," \n
+                         "	""des_FloraMountainRiflemanAKU12""," \n
+                         "	""des_FloraMountainRiflemanAKM""," \n
+                         "	""des_FloraMountainRiflemanAKMS""," \n
+                         "	""des_FloraMountainRiflemanAK47""," \n
+                         "	""des_FloraMountainRiflemanAK103""," \n
+                         "	""des_FloraMountainRiflemanAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayRifleman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_33">*/
+                class Give_Loudout_33
+                {
+                        name = "Give_Loudout_33";
+                        itemno = 74;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayGrenadier = " \n
+                         "[" \n
+                         "	""des_FloraMountainGrenadierAK74mGP25""," \n
+                         "	""des_FloraMountainGrenadierAK12GL""," \n
+                         "	""des_FloraMountainGrenadierAKS74GL""," \n
+                         "	""des_FloraMountainGrenadierAKMgp25""," \n
+                         "	""des_FloraMountainGrenadierAKMSgp25""," \n
+                         "	""des_FloraMountainGrenadierAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayGrenadier;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_34">*/
+                class Give_Loudout_34
+                {
+                        name = "Give_Loudout_34";
+                        itemno = 75;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayLMG = " \n
+                         "[" \n
+                         "	""des_FloraMountainLmachinegunnerRPK""," \n
+                         "	""des_FloraMountainLmachinegunnerRPK12""," \n
+                         "	""des_FloraMountainLmachinegunnerRPK74""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayLMG;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_35">*/
+                class Give_Loudout_35
+                {
+                        name = "Give_Loudout_35";
+                        itemno = 77;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAa = " \n
+                         "[" \n
+                         "	""des_FloraMountainAtAK74m""," \n
+                         "	""des_FloraMountainAtAK105""," \n
+                         "	""des_FloraMountainAtAK74""," \n
+                         "	""des_FloraMountainAtAKS74""," \n
+                         "	""des_FloraMountainAtAKS74U""," \n
+                         "	""des_FloraMountainAtAK12""," \n
+                         "	""des_FloraMountainAtAKU12""," \n
+                         "	""des_FloraMountainAtAKM""," \n
+                         "	""des_FloraMountainAtAKMS""," \n
+                         "	""des_FloraMountainAtAK47""," \n
+                         "	""des_FloraMountainAtAK103""," \n
+                         "	""des_FloraMountainAtAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAa;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Junction__1">*/
+                class Junction__1
+                {
+                        name = "Junction__1";
+                        itemno = 78;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "medic">*/
+                                class medic
+                                {
+                                        itemno = 30;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_9";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_medic"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "jr_sergeant_">*/
+                                class jr_sergeant_
+                                {
+                                        itemno = 25;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_11";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_junior_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_">*/
+                                class machinegunner_
+                                {
+                                        itemno = 26;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_12";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "marksman_">*/
+                                class marksman_
+                                {
+                                        itemno = 27;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_13";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_marksman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "rifleman">*/
+                                class rifleman
+                                {
+                                        itemno = 28;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_14";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_rifleman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "sergent_">*/
+                                class sergent_
+                                {
+                                        itemno = 24;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_10";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "grenadoer">*/
+                                class grenadoer
+                                {
+                                        itemno = 31;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_15";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_grenadier"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_ass">*/
+                                class machinegunner_ass
+                                {
+                                        itemno = 32;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_16";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner_assistant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AT">*/
+                                class AT
+                                {
+                                        itemno = 40;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_17";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_at"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AA__">*/
+                                class AA__
+                                {
+                                        itemno = 85;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_38";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_emr_aa"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Junction__2">*/
+                class Junction__2
+                {
+                        name = "Junction__2";
+                        itemno = 79;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "medic">*/
+                                class medic
+                                {
+                                        itemno = 48;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_18";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_medic"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "jr_sergeant_">*/
+                                class jr_sergeant_
+                                {
+                                        itemno = 43;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_20";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_junior_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_">*/
+                                class machinegunner_
+                                {
+                                        itemno = 44;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_21";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "marksman_">*/
+                                class marksman_
+                                {
+                                        itemno = 45;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_22";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_marksman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "rifleman">*/
+                                class rifleman
+                                {
+                                        itemno = 46;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_23";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_rifleman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "sergent_">*/
+                                class sergent_
+                                {
+                                        itemno = 42;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_19";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "grenadoer">*/
+                                class grenadoer
+                                {
+                                        itemno = 49;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_24";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_grenadier"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_ass">*/
+                                class machinegunner_ass
+                                {
+                                        itemno = 50;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_25";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner_assistant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AT">*/
+                                class AT
+                                {
+                                        itemno = 58;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_26";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_at"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AA__">*/
+                                class AA__
+                                {
+                                        itemno = 83;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_37";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_emr_aa"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Junction__3">*/
+                class Junction__3
+                {
+                        name = "Junction__3";
+                        itemno = 80;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "medic">*/
+                                class medic
+                                {
+                                        itemno = 66;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_27";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_medic"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "jr_sergeant_">*/
+                                class jr_sergeant_
+                                {
+                                        itemno = 61;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_29";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_junior_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_">*/
+                                class machinegunner_
+                                {
+                                        itemno = 62;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_30";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "marksman_">*/
+                                class marksman_
+                                {
+                                        itemno = 63;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_31";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_marksman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "rifleman">*/
+                                class rifleman
+                                {
+                                        itemno = 64;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_32";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_rifleman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "sergent_">*/
+                                class sergent_
+                                {
+                                        itemno = 60;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_28";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "grenadoer">*/
+                                class grenadoer
+                                {
+                                        itemno = 67;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_33";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_grenadier"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_ass">*/
+                                class machinegunner_ass
+                                {
+                                        itemno = 68;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_34";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner_assistant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AT">*/
+                                class AT
+                                {
+                                        itemno = 76;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_35";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_at"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AA__">*/
+                                class AA__
+                                {
+                                        itemno = 81;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_36";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_emr_aa"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_36">*/
+                class Give_Loudout_36
+                {
+                        name = "Give_Loudout_36";
+                        itemno = 82;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAa = " \n
+                         "[" \n
+                         "	""des_FloraMountainAaAK74m""," \n
+                         "	""des_FloraMountainAaAK105""," \n
+                         "	""des_FloraMountainAaAK74""," \n
+                         "	""des_FloraMountainAaAKS74""," \n
+                         "	""des_FloraMountainAaAKS74U""," \n
+                         "	""des_FloraMountainAaAK12""," \n
+                         "	""des_FloraMountainAaAKU12""," \n
+                         "	""des_FloraMountainAaAKM""," \n
+                         "	""des_FloraMountainAaAKMS""," \n
+                         "	""des_FloraMountainAaAK47""," \n
+                         "	""des_FloraMountainAaAK103""," \n
+                         "	""des_FloraMountainAaAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAa;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_37">*/
+                class Give_Loudout_37
+                {
+                        name = "Give_Loudout_37";
+                        itemno = 84;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAa = " \n
+                         "[" \n
+                         "	""des_FloraAltAaAK74m""," \n
+                         "	""des_FloraAltAaAK105""," \n
+                         "	""des_FloraAltAaAK74""," \n
+                         "	""des_FloraAltAaAKS74""," \n
+                         "	""des_FloraAltAaAKS74U""," \n
+                         "	""des_FloraAltAaAK12""," \n
+                         "	""des_FloraAltAaAKU12""," \n
+                         "	""des_FloraAltAaAKM""," \n
+                         "	""des_FloraAltAaAKMS""," \n
+                         "	""des_FloraAltAaAK47""," \n
+                         "	""des_FloraAltAaAK103""," \n
+                         "	""des_FloraAltAaAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAa;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_38">*/
+                class Give_Loudout_38
+                {
+                        name = "Give_Loudout_38";
+                        itemno = 86;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAa = " \n
+                         "[" \n
+                         "	""des_FloraAaAK74m""," \n
+                         "	""des_FloraAaAK105""," \n
+                         "	""des_FloraAaAK74""," \n
+                         "	""des_FloraAaAKS74""," \n
+                         "	""des_FloraAaAKS74U""," \n
+                         "	""des_FloraAaAK12""," \n
+                         "	""des_FloraAaAKU12""," \n
+                         "	""des_FloraAaAKM""," \n
+                         "	""des_FloraAaAKMS""," \n
+                         "	""des_FloraAaAK47""," \n
+                         "	""des_FloraAaAK103""," \n
+                         "	""des_FloraAaAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAa;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_39">*/
+                class Give_Loudout_39
+                {
+                        name = "Give_Loudout_39";
+                        itemno = 88;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAA = " \n
+                         "[" \n
+                         "	""des_EMRAaAK74m""," \n
+                         "	""des_EMRAaAK105""," \n
+                         "	""des_EMRAaAK74""," \n
+                         "	""des_EMRAaAK74s""," \n
+                         "	""des_EMRAaAKS74u""," \n
+                         "	""des_EMRAaAK12""," \n
+                         "	""des_EMRAaAKU12""," \n
+                         "	""des_EMRAaAKM""," \n
+                         "	""des_EMRAaAKMS""," \n
+                         "	""des_EMRAaAK47""," \n
+                         "	""des_EMRAaAK103""," \n
+                         "	""des_EMRAaAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAA"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Junction__4">*/
+                class Junction__4
+                {
+                        name = "Junction__4";
+                        itemno = 89;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "medic">*/
+                                class medic
+                                {
+                                        itemno = 96;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_40";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_medic"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "jr_sergeant_">*/
+                                class jr_sergeant_
+                                {
+                                        itemno = 91;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_42";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_junior_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_">*/
+                                class machinegunner_
+                                {
+                                        itemno = 92;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_43";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "marksman_">*/
+                                class marksman_
+                                {
+                                        itemno = 93;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_44";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_marksman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "rifleman">*/
+                                class rifleman
+                                {
+                                        itemno = 94;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_45";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_rifleman"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "sergent_">*/
+                                class sergent_
+                                {
+                                        itemno = 90;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_41";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_sergeant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "grenadoer">*/
+                                class grenadoer
+                                {
+                                        itemno = 97;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_46";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_grenadier"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "machinegunner_ass">*/
+                                class machinegunner_ass
+                                {
+                                        itemno = 98;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_47";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_machinegunner_assistant"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AT">*/
+                                class AT
+                                {
+                                        itemno = 106;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_48";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_at"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "AA__">*/
+                                class AA__
+                                {
+                                        itemno = 108;
+                                        priority = 0.000000;
+                                        to="Give_Loudout_49";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"typeOf _unit == ""rhs_msv_emr_aa"""/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_40">*/
+                class Give_Loudout_40
+                {
+                        name = "Give_Loudout_40";
+                        itemno = 95;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMedic = " \n
+                         "[" \n
+                         "	""des_EMRdesertMedicAK74m""," \n
+                         "	""des_EMRdesertMedicAK105""," \n
+                         "	""des_EMRdesertMedicAK74""," \n
+                         "	""des_EMRdesertMedicAKS74""," \n
+                         "	""des_EMRdesertMedicAKS74U""," \n
+                         "	""des_EMRdesertMedicAK12""," \n
+                         "	""des_EMRdesertMedicAKU12""," \n
+                         "	""des_EMRdesertMedicAKM""," \n
+                         "	""des_EMRdesertMedicAKMS""," \n
+                         "	""des_EMRdesertMedicAK47""," \n
+                         "	""des_EMRdesertMedicAK103""," \n
+                         "	""des_EMRdesertMedicAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMedic;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_41">*/
+                class Give_Loudout_41
+                {
+                        name = "Give_Loudout_41";
+                        itemno = 99;
+                        init = /*%FSM<STATEINIT""">*/"respawnArraySergeant = " \n
+                         "[" \n
+                         "	""des_EMRdesertSergeantAK74m""," \n
+                         "	""des_EMRdesertSergeantAK105""," \n
+                         "	""des_EMRdesertSergeantAK74""," \n
+                         "	""des_EMRdesertSergeantAKS74""," \n
+                         "	""des_EMRdesertSergeantAKS74U""," \n
+                         "	""des_EMRdesertSergeantAK12""," \n
+                         "	""des_EMRdesertSergeantAKU12""," \n
+                         "	""des_EMRdesertSergeantAKM""," \n
+                         "	""des_EMRdesertSergeantAKMS""," \n
+                         "	""des_EMRdesertSergeantAK47""," \n
+                         "	""des_EMRdesertSergeantAK103""," \n
+                         "	""des_EMRdesertSergeantAK104""" \n
+                         "	" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArraySergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_42">*/
+                class Give_Loudout_42
+                {
+                        name = "Give_Loudout_42";
+                        itemno = 100;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayJuniorSergeant = " \n
+                         "[" \n
+                         "	""des_EMRdesertJuniorSergeantAK74mGP25""," \n
+                         "	""des_EMRdesertJuniorSergeantAK12GL""," \n
+                         "	""des_EMRdesertJuniorSergeantAKS74GL""," \n
+                         "	""des_EMRdesertJuniorSergeantAKMgp25""," \n
+                         "	""des_EMRdesertJuniorSergeantAKMSgp25""," \n
+                         "	""des_EMRdesertJuniorSergeantAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayJuniorSergeant;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_43">*/
+                class Give_Loudout_43
+                {
+                        name = "Give_Loudout_43";
+                        itemno = 101;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMachinegunner = " \n
+                         "[" \n
+                         "	""des_EMRdesertMachinegunnerPKP""," \n
+                         "	""des_EMRdesertMachinegunnerPKM""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMachinegunner;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_44">*/
+                class Give_Loudout_44
+                {
+                        name = "Give_Loudout_44";
+                        itemno = 102;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayMarksman = " \n
+                         "[" \n
+                         "	""des_EMRdesertDMRSVDm""," \n
+                         "	""des_EMRdesertDMRSVDs""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayMarksman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_45">*/
+                class Give_Loudout_45
+                {
+                        name = "Give_Loudout_45";
+                        itemno = 103;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayRifleman = " \n
+                         "[" \n
+                         "	""des_EMRdesertRiflemanAK74m""," \n
+                         "	""des_EMRdesertRiflemanAK105""," \n
+                         "	""des_EMRdesertRiflemanAK74""," \n
+                         "	""des_EMRdesertRiflemanAKS74""," \n
+                         "	""des_EMRdesertRiflemanAKS74U""," \n
+                         "	""des_EMRdesertRiflemanAK12""," \n
+                         "	""des_EMRdesertRiflemanAKU12""," \n
+                         "	""des_EMRdesertRiflemanAKM""," \n
+                         "	""des_EMRdesertRiflemanAKMS""," \n
+                         "	""des_EMRdesertRiflemanAK47""," \n
+                         "	""des_EMRdesertRiflemanAK103""," \n
+                         "	""des_EMRdesertRiflemanAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayRifleman;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_46">*/
+                class Give_Loudout_46
+                {
+                        name = "Give_Loudout_46";
+                        itemno = 104;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayGrenadier = " \n
+                         "[" \n
+                         "	""des_EMRdesertGrenadierAK74mGP25""," \n
+                         "	""des_EMRdesertGrenadierAK12GL""," \n
+                         "	""des_EMRdesertGrenadierAKS74GL""," \n
+                         "	""des_EMRdesertGrenadierAKMgp25""," \n
+                         "	""des_EMRdesertGrenadierAKMSgp25""," \n
+                         "	""des_EMRdesertGrenadierAK103gp25""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayGrenadier;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_47">*/
+                class Give_Loudout_47
+                {
+                        name = "Give_Loudout_47";
+                        itemno = 105;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayLMG = " \n
+                         "[" \n
+                         "	""des_EMRdesertLmachinegunnerRPK""," \n
+                         "	""des_EMRdesertLmachinegunnerRPK12""," \n
+                         "	""des_EMRdesertLmachinegunnerRPK74""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayLMG;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_48">*/
+                class Give_Loudout_48
+                {
+                        name = "Give_Loudout_48";
+                        itemno = 107;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAT = " \n
+                         "[" \n
+                         "	""des_EMRdesertAtAK74m""," \n
+                         "	""des_EMRdesertAtAK105""," \n
+                         "	""des_EMRdesertAtAK74""," \n
+                         "	""des_EMRdesertAtAKS74""," \n
+                         "	""des_EMRdesertAtAKS74U""," \n
+                         "	""des_EMRdesertAtAK12""," \n
+                         "	""des_EMRdesertAtAKU12""," \n
+                         "	""des_EMRdesertAtAKM""," \n
+                         "	""des_EMRdesertAtAKMS""," \n
+                         "	""des_EMRdesertAtAK47""," \n
+                         "	""des_EMRdesertAtAK103""," \n
+                         "	""des_EMRdesertAtAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAT;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Give_Loudout_49">*/
+                class Give_Loudout_49
+                {
+                        name = "Give_Loudout_49";
+                        itemno = 109;
+                        init = /*%FSM<STATEINIT""">*/"respawnArrayAA = " \n
+                         "[" \n
+                         "	""des_EMRdesertAaAK74m""," \n
+                         "	""des_EMRdesertAaAK105""," \n
+                         "	""des_EMRdesertAaAK74""," \n
+                         "	""des_EMRdesertAaAK74s""," \n
+                         "	""des_EMRdesertAaAKS74u""," \n
+                         "	""des_EMRdesertAaAK12""," \n
+                         "	""des_EMRdesertAaAKU12""," \n
+                         "	""des_EMRdesertAaAKM""," \n
+                         "	""des_EMRdesertAaAKMS""," \n
+                         "	""des_EMRdesertAaAK47""," \n
+                         "	""des_EMRdesertAaAK103""," \n
+                         "	""des_EMRdesertAaAK104""" \n
+                         "];" \n
+                         "{[_unit,_x] call BIS_fnc_addRespawnInventory} foreach respawnArrayAA"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="init_";
+        finalStates[] =
+        {
+        };
+};
+/*%FSM</COMPILE>*/

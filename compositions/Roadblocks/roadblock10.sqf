@@ -1,0 +1,34 @@
+/*
+Roadblock 10
+*/
+
+[
+	["Land_BarGate_F",[4.14746,-0.366211,0],0,1,0,[],"","",true,false], 
+	["Land_HBarrier_5_F",[-4.95947,-1.90723,0],90,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[-6.38818,1.47607,0],90,1,0,[],"","",true,false], 
+	["Land_Razorwire_F",[-4.86963,6.49219,0],90,1,0,[],"","",true,false], 
+	["Land_HBarrier_5_F",[-4.71143,-0.483398,0],180,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[4.52197,-5.92383,0],90,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[-6.33838,4.18604,0],89,1,0,[],"","",true,false], 
+	["Land_PaperBox_closed_F",[5.76709,-5.41309,0],0,1,0,[],"","",true,false], 
+	["Land_HBarrier_5_F",[9.45801,-3.7915,0],179,1,0,[],"","",true,false], 
+	["Land_HBarrier_5_F",[5.35107,4,0],0,1,0,[],"","",true,false], 
+	["Land_Pallet_MilBoxes_F",[-8.66797,-2.22559,0],179,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[6.8418,6.07617,0],90,1,0,[],"","",true,false], 
+	["Land_PaperBox_open_empty_F",[7.49951,-5.31543,0],0,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[-6.32813,6.82617,0],88,1,0,[],"","",true,false], 
+	["Land_HBarrier_5_F",[9.47412,-2.104,0],271,1,0,[],"","",true,false], 
+	["Land_Razorwire_F",[5.7002,10.9121,0],90,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[-7.35889,8.31201,0],179,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[6.90186,8.78613,0],89,1,0,[],"","",true,false], 
+	["Land_BagBunker_Small_F",[-11.126,2.13965,0],180,1,0,[],"","",true,false], 
+	["rhs_KORD_high_INS",[-11.126,2.13965,-0.0654745],0.00610191,1,0,[],"static_1","",true,false], 
+	["rhs_bmd2_chdkz",[-8.80176,-7.31006,-0.0934825],0.000178623,1,0,[],"vehicle_1","",true,false], 
+	["CamoNet_BLUFOR_open_Curator_F",[-8.97559,-6.44043,0],271,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[-10.0288,8.33203,0],180,1,0,[],"","",true,false], 
+	["Land_Razorwire_F",[-7.16113,9.55078,0],179,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[6.85156,11.4858,0],88,1,0,[],"","",true,false], 
+	["Land_HBarrier_5_F",[-13.2896,-0.517578,0],90,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[-12.7427,-6.86816,0],269,1,0,[],"","",true,false], 
+	["Land_CncBarrier_F",[-12.6284,8.37158,0],180,1,0,[],"","",true,false]
+]

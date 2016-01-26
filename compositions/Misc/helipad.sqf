@@ -1,0 +1,42 @@
+/*
+Helipad
+*/
+
+[
+	["Land_HelipadCircle_F",[-0.229492,0.441895,0],0,1,0,[],"","",true,false], 
+	["PortableHelipadLight_01_green_F",[-0.228516,0.443848,4.76837e-007],358.993,1,0,[],"vehicle_2","",true,false], 
+	["PortableHelipadLight_01_yellow_F",[-0.181641,-6.67822,4.76837e-007],358.993,1,0,[],"vehicle_3","",true,false], 
+	["PortableHelipadLight_01_yellow_F",[4.91895,-4.62842,4.76837e-007],359.994,1,0,[],"vehicle_1","",true,false], 
+	["PortableHelipadLight_01_yellow_F",[-5.61719,-4.68262,4.76837e-007],358.993,1,0,[],"vehicle_7","",true,false], 
+	["PortableHelipadLight_01_yellow_F",[7.30371,0.410645,4.76837e-007],358.993,1,0,[],"vehicle_5","",true,false], 
+	["PortableHelipadLight_01_yellow_F",[4.91016,5.61719,4.76837e-007],358.993,1,0,[],"vehicle_4","",true,false], 
+	["PortableHelipadLight_01_yellow_F",[-7.60352,0.588379,4.76837e-007],359.994,1,0,[],"vehicle_6","",true,false], 
+	["PortableHelipadLight_01_yellow_F",[-5.31445,5.69678,4.76837e-007],358.993,1,0,[],"vehicle_8","",true,false], 
+	["PortableHelipadLight_01_yellow_F",[-0.0332031,7.84326,4.76837e-007],358.993,1,0,[],"vehicle_9","",true,false], 
+	["Land_BagFence_Long_F",[-0.262695,-9.35645,0],179,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[-9.84473,0.555664,0],268,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[9.90527,0.567871,0],269,1,0,[],"","",true,false], 
+	["Land_PlasticCase_01_small_F",[10.3359,0.644043,-4.76837e-007],359.001,1,0,[],"","",true,false], 
+	["Land_PlasticCase_01_small_F",[10.3486,1.55225,-4.76837e-007],0.000901766,1,0,[],"","",true,false], 
+	["Land_MetalBarrel_F",[-10.5293,0.941895,5.43594e-005],358.981,1,0.00998118,[],"","",true,false], 
+	["Land_MetalBarrel_empty_F",[10.583,-0.117676,0],0,1,0,[],"","",true,false], 
+	["Land_MetalBarrel_F",[-10.4844,1.6958,5.38826e-005],358.981,1,0.00998021,[],"","",true,false], 
+	["Land_BagFence_Long_F",[-0.0253906,10.7363,0],180,1,0,[],"","",true,false], 
+	["Land_MetalBarrel_F",[-11.0381,1.42432,5.43594e-005],358.98,1,0.00998215,[],"","",true,false], 
+	["Land_BagFence_Long_F",[-6.66699,-9.10791,0],180,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[-9.81934,-5.7627,0],269,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[7.03125,-9.35352,0],179,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[10.0342,-6.21875,0],90,1,0,[],"","",true,false], 
+	["Land_Pallet_MilBoxes_F",[-10.8398,-5.18555,0],0,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[9.8252,7.36768,0],268,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[-6.39648,10.5801,0],358,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[-9.94238,7.37646,0],269,1,0,[],"","",true,false], 
+	["Land_BagFence_Round_F",[-9.45996,-8.52197,0],48,1,0,[],"","",true,false], 
+	["Land_BagFence_Long_F",[6.44434,10.6064,0],179,1,0,[],"","",true,false], 
+	["Land_BagFence_Round_F",[9.45508,-8.97314,0],318,1,0,[],"","",true,false], 
+	["FlexibleTank_01_forest_F",[-10.6455,8.29492,0.000101089],0.0117632,1,0.0196471,[],"","",true,false], 
+	["Land_BagFence_Round_F",[-9.36035,10.2207,0],138,1,0,[],"","",true,false], 
+	["Land_BagFence_Round_F",[9.38379,10.2632,0],223,1,0,[],"","",true,false], 
+	["FlexibleTank_01_forest_F",[-10.6914,9.39404,0.000101089],0.0117109,1,0.019647,[],"","",true,false], 
+	["Windsock_01_F",[10.1924,11.1958,0],0,1,0,[],"","",true,false]
+]

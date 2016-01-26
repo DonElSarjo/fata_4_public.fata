@@ -1,0 +1,181 @@
+author = "Don El Sarjo";
+
+overviewText = "Mission: PR Fata - Insurgency";
+overviewTextLocked = "Insurgency";
+overviewPicture = "title.paa";
+
+OnLoadName = "PR Fata - Insurgency";
+OnLoadMission = "ВДВ С неба привет!";
+loadScreen = "title.paa";
+
+disabledAI = true;
+respawnOnStart = 1;
+respawnDelay = 10;
+respawnDialog = false;
+enableDebugConsole = 1;
+respawn = "BASE";
+respawnTemplatesEast[] = {"MenuPosition", "Menuinventory", "Tickets"};
+
+#include "R3F_LOG\desc_include.h"
+#include "6RusLoudouts\defines.hpp"
+#include "6RusLoudouts\dialogs.hpp"
+
+class CfgTaskEnhancements
+{
+   enable       = 1;
+   3d           = 0;
+   3dDrawDist   = 0;
+   share        = 0;
+   propagate    = 0;
+};
+
+class CfgTaskTypes
+{
+   class Attack
+   {
+       icon     = "\A3\UI_F_MP_Mark\Data\Tasks\Types\Attack_ca.paa";
+       icon3D   = "\A3\UI_F_MP_Mark\Data\Tasks\Types3D\Attack_ca.paa";
+   };
+   class Defend
+   {
+       icon     = "\A3\UI_F_MP_Mark\Data\Tasks\Types\Defend_ca.paa";
+       icon3D   = "\A3\UI_F_MP_Mark\Data\Tasks\Types3D\Defend_ca.paa";
+   };
+   class Destroy
+   {
+	   icon = "\A3\UI_F_MP_Mark\Data\Tasks\Types\Destroy_ca.paa";
+	   icon3D = "\A3\UI_F_MP_Mark\Data\Tasks\Types3D\Destroy_ca.paa";
+   };
+   class Interact
+   {
+	   icon = "\A3\UI_F_MP_Mark\Data\Tasks\Types\Interact_ca.paa";
+	   icon3D = "\A3\UI_F_MP_Mark\Data\Tasks\Types3D\Interact_ca.paa";
+   };
+   class Move
+   {
+	   icon = "\A3\UI_F_MP_Mark\Data\Tasks\Types\Move_ca.paa";
+	   icon3D = "\A3\UI_F_MP_Mark\Data\Tasks\Types3D\Move_ca.paa";
+   };
+   class Search
+   {
+	   icon = "\A3\UI_F_MP_Mark\Data\Tasks\Types\Search_ca.paa";
+	   icon3D = "\A3\UI_F_MP_Mark\Data\Tasks\Types3D\Search_ca.paa";
+   };
+   class Support
+   {
+	   icon = "\A3\UI_F_MP_Mark\Data\Tasks\Types\Support_ca.paa";
+	   icon3D = "\A3\UI_F_MP_Mark\Data\Tasks\Types3D\Support_ca.paa";
+   };
+};
+
+class header
+{
+	gametype = COOP;
+	minplayers = 1;
+	maxplayers = 22;
+	playerCountMultipleOf = 1;
+};
+
+class Params
+{
+
+	class loadoutSettings //0
+	{
+		title = ":: Loadout Einstellungen ::";
+		values[]={1, 2, 3, 4, 5};
+		texts[]={ "EMR", "Flora", "Flora (Alt.)", "Flora (Mountain.)", "EMR Desert"};
+		default = 5;
+	};
+
+    class cachesLimit //1
+	{
+		title = ":: Zu findende Waffendepots ::";
+		values[] = {2, 4, 6, 8, 10, 12, 14, 16};
+		texts[] = {"Zwei", "Vier", "Sechs", "Acht", "Zehn", "Zwölf", "Vierzehn", "Sechszehn"};
+		default = 6;
+	};
+
+	class intelItems //2
+	{
+		title = ":: Anzahl an Intel, das in einer Zonen spawnt ::";
+		values[] = {1, 2, 3, 4, 5, 6, 7, 8};
+		texts[] = {"1 - Extreme", "2 - Sehr Hart", "3 - Hart", "4 - Hart\Medium", "5 - Medium", "6 - Medium/Leicht", "7 -Leicht", "8 - Sehr leicht"};
+		default = 5;
+	};
+
+	class ticketLimit //3
+	{
+		title = ":: Tickets zu Beginn der Mission ::";
+		values[] = {25, 30, 35, 40, 45, 50};
+		texts[] = {"25", "30", "35", "40", "45", "50"};
+		default = 50;
+	};
+
+    class FPSticker //4
+	{
+		title = ":: FPS Anzeige ::";
+		values[] = {0, 1};
+		texts[] = {"AN", "AUS"};
+		default = 1;
+	};
+    class FPStickerRefresh //5
+	{
+		title = ":: FPS Aktualisierungsrate ::";
+		values[] = {1, 2, 3, 4, 5, 6 ,7 ,8 , 9, 10};
+		texts[] = {"1 Sek.", "2 Sek.", "3 Sek.", "4 Sek.", "5 Sek.", "6 Sek.", "7 Sek.", "8 Sek.", "9 Sek.", "10 Sek."};
+		default = 2;
+	};
+};
+
+class CfgDebriefing
+{
+	class Abort
+	{
+		title = "PR Fata";
+		subtitle = "Mission abgebrochen";
+		description = "";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.6, 0.0, 0.0, 1};
+	};
+	class l_end2
+	{
+		title = "PR Fata";
+		subtitle = "Mission erfolgreich";
+		description = "Sie haben Ihre Aufgaben erfülllt!";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.6, 0.0, 0.0, 1};
+	};
+	class l_fail
+	{
+		title = "PR Fata";
+		subtitle = "Mission gescheitert";
+		description = "Sie haben Ihre Aufgabe nicht erfüllt!";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.6, 0.0, 0.0, 1};
+	};
+};
+
+class CfgFunctions
+{
+	#include "fnc\functions.h"
+};
+
+class CfgRespawnInventory
+{
+	#include "6RusLoudouts\emr.hpp"
+    #include "6RusLoudouts\emrDesert.hpp"
+	#include "6RusLoudouts\flora.hpp"
+	#include "6RusLoudouts\floraAlt.hpp"
+	#include "6RusLoudouts\floraMountain.hpp"
+};
+
+class Extended_Init_EventHandlers
+{
+    class rhs_g_Soldier_AA_F
+    {
+        init = "_this call (compile preprocessFileLineNumbers 'script\aa_fix.sqf')";
+    };
+};
