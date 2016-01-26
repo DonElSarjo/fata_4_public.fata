@@ -444,11 +444,11 @@ class Mission
 					position[]={60.050697,10.023987,8.3518066};
 					id=6;
 					side="EAST";
-					vehicle="rhs_msv_machinegunner_assistant";
+					vehicle="rhs_msv_rifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					text="s9";
-					description="Voron - LMG-Schütze";
+					description="Voron - Schütze";
 				};
 				class Item3
 				{
@@ -926,11 +926,11 @@ class Mission
 					position[]={59.65226,10.014069,3.9694824};
 					id=22;
 					side="EAST";
-					vehicle="rhs_msv_machinegunner_assistant";
+					vehicle="rhs_msv_rifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					text="s20";
-					description="Kavalenko - LMG-Schütze";
+					description="Kavalenko -Schütze";
 				};
 				class Item3
 				{

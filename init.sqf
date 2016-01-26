@@ -19,10 +19,23 @@ execVM "R3F_LOG\init.sqf";
 //FPS Marker
 if (paramsArray select 4 == 1) then
 {
-	_FPSmrk = createMarker ["fpsMarker",[0,0,0]];
+	_FPSmrk = createMarker ["fpsMarkerServer",[100, 100, 0]];
 	_FPSmrk setMarkerShape "ICON";
 	_FPSmrk setMarkerType "KIA";
 	_FPSmrk setMarkerColor "ColorBlack";
+	_FPSmrk setMarkerText "Server: n/a";
+
+	_FPSmrk = createMarker ["fpsMarkerHC",[100, 200, 0]];
+	_FPSmrk setMarkerShape "ICON";
+	_FPSmrk setMarkerType "KIA";
+	_FPSmrk setMarkerColor "ColorBlack";
+	_FPSmrk setMarkerText "Headless Client: n/a";
+
+	_FPSmrk = createMarker ["aliveUnits",[100, 300, 0]];
+	_FPSmrk setMarkerShape "ICON";
+	_FPSmrk setMarkerType "KIA";
+	_FPSmrk setMarkerColor "ColorBlack";
+	_FPSmrk setMarkerText "Units alive: n/a";
 };
 
 //server variables and mission functions
@@ -35,7 +48,7 @@ if (isServer) then
 		{
 			while {true} do
 			{
-				"fpsMarker" setMarkerText format ["Server: %1 FPS", (floor diag_fps)];
+				"fpsMarkerServer" setMarkerText format ["Server: %1 FPS", (floor diag_fps)];
 				sleep (paramsArray select 5);
 			}
 		}
@@ -109,12 +122,32 @@ hcPresent = false;
 if (!hasInterface && !isServer) then
 {
 	hcPresent = true;
-	publicVariable "hcPresent"
+	publicVariable "hcPresent";
+
+	if (paramsArray select 4 == 1) then
+	{
+		[] spawn
+		{
+			while {true} do
+			{
+				"fpsMarkerHC" setMarkerText format ["Headless Client: %1 FPS", (floor diag_fps)];
+				sleep (paramsArray select 5);
+			}
+		};
+		[] spawn
+		{
+			while {true} do
+			{
+				"aliveUnits" setMarkerText format ["Units alive: %1", count allUnits];
+				sleep 5;
+			}
+		}
+	}
 };
 
 [] execVM "eos\OpenMe.sqf";
 
-/*/////////////////
+///////////////////
 //Insurgency init//
 ///////////////////
 

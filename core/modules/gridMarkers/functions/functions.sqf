@@ -8,7 +8,7 @@ SL_fnc_urbanAreas = {
 
 	for "_x" from 0 to (count _locations - 1) do {
 		_randomLoc = _locations select _x;
-		
+
 		private["_cityName","_cityPos","_cityRadA","_cityRadB","_cityType","_cityAngle"];
 		_cityName = getText(_randomLoc >> "name");
 		_cityPos = getArray(_randomLoc >> "position");
@@ -30,7 +30,7 @@ SL_fnc_urbanAreas = {
 
 SL_fnc_findBuildings = {
 	private ["_center","_radius","_buildings"];
-	if(typeName((_this select 0)select 0) == "String") then 
+	if(typeName((_this select 0)select 0) == "String") then
 	{
 		_center = [call compile((_this select 0)select 0),call compile ((_this select 0)select 1)];
 	}
@@ -67,6 +67,7 @@ getGridPos = {
 };
 
 SL_fnc_createTriggers = {
+	/*
 	private ["_markers","_pos","_trigE"];
 
 	{
@@ -77,7 +78,7 @@ SL_fnc_createTriggers = {
 		_trigE setTriggerStatements ["{(side _x) == resistance} count thisList == 0 AND {(side _x) == east } count thisList >= 1", format["""%1"" setMarkerColor ""ColorGreen"";",_x], ""];
 
 	} foreach _this;
-
+*/
 };
 
 SO_fnc_randomCity = {
@@ -88,8 +89,8 @@ SO_fnc_randomCity = {
 
 	// Stuff we need
 	_locations = configfile >> "CfgWorlds" >> worldName >> "Names";
-	//_cityTypes = ["Name","NameLocal","NameVillage","NameCity","NameCityCapital"];
-	_cityTypes = ["NameVillage","NameCity","NameCityCapital"];
+	_cityTypes = ["Name","NameLocal","NameVillage","NameCity","NameCityCapital"];
+	//_cityTypes = ["NameVillage","NameCity","NameCityCapital"];
 	_found = 0;
 
 

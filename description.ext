@@ -130,28 +130,28 @@ class Params
 		title = ":: Inf. Wahrscheinlichkeit ::";
 		values[] = {0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100};
 		texts[] = {"0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100"};
-		default = 75;
+		default = 25;
 	};
     class MechArmSpawnPropablility //7
 	{
 		title = ":: Mech. Wahrscheinlichkeit ::";
 		values[] = {0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100};
 		texts[] = {"0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100"};
-		default = 75;
+		default = 50;
 	};
     class CivpawnPropablility //8
 	{
 		title = ":: Ziv. Wahrscheinlichkeit ::";
 		values[] = {0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100};
 		texts[] = {"0", "5", "10", "15", "20", "25", "30", "35", "40", "45", "50", "55", "60", "65", "70", "75", "80", "85", "90", "95", "100"};
-		default = 75;
+		default = 10;
 	};
     class CacheDistanceEOS //9
 	{
 		title = ":: Cache Distanz ::";
 		values[] = {300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 1000, 1050, 1100, 1150, 1200, 1250, 1300, 1350, 1400, 1450, 1500};
 		texts[] = {"300", "350", "400", "450", "500", "550", "600", "650", "700", "750", "800", "850", "900", "950", "1000", "1050", "1100", "1150", "1200", "1250", "1300", "1350", "1400", "1450", "1500"};
-		default = 1000;
+		default = 800;
 	};
 };
 
@@ -203,3 +203,13 @@ class Extended_Init_EventHandlers
         init = "_this call (compile preprocessFileLineNumbers 'script\aa_fix.sqf')";
     };
 };
+
+corpseManagerMode = 1; 					// Type of removed bodies: 0 - none, 1 - all, 2 - only respawnable, 3 - only non-respawnable
+corpseLimit = 25; 						// Max number of bodies which can be available at the same time. When exceeded, start deleting immediately.
+corpseRemovalMinTime = 120; 			// Minimal time in seconds a body stays in the scene (can't be removed sooner).
+corpseRemovalMaxTime = 240; 			// Maximal time in seconds after which a dead body is removed (can't stay longer)
+
+wreckManagerMode = 1; 					// Type of removed wrecks: 0 - none, 1 - all, 2 - only respawnable, 3 - only non-respawnable
+wreckLimit = 5; 						// Max number of wrecks which can be available at the same time. When exceeded, start deleting immediately.
+wreckRemovalMinTime = 120; 				// Minimal time in seconds a wreck stays in the scene (can't be removed sooner).
+wreckRemovalMaxTime = 240; 				// Maximal time in seconds after which a wreck is removed (can't stay longer)

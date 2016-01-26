@@ -34,7 +34,7 @@ _cities = call SL_fnc_urbanAreas;
 				_mkr setMarkerTypeLocal "SOLID";
 				_mkr setMarkerSizeLocal [50,50];
 				_mkr setMarkerColor "ColorRed";
-				_mkr setMarkerAlphaLocal 0.8;
+				_mkr setMarkerAlpha 0;
 
 				_markers set [_markers_cnt, _mkr];
 				_markers_cnt = _markers_cnt + 1;
