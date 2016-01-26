@@ -27,5 +27,6 @@ class des_fnc
 			class timer {};
 			class safezone {};
 			class strategicMapOpen {};
+			class establishingShotClient {};
 	}
 };
