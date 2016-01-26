@@ -2,6 +2,7 @@
 
 //define displays
 _display = _this select 0;
+
 _CT_LISTNBOX = _display displayctrl 1600;
 
 _CT_LISTNBOX1 = _display displayctrl 1700;
@@ -15,6 +16,7 @@ if ((_weapon splitstring "_")select 0 == "rhs") then
 	availableScopes = ["rhs_acc_1p63","rhs_acc_ekp1","rhs_acc_pkas"];
 	availableMuzzles = getArray (configfile >> "CfgWeapons" >> _weapon >> "WeaponSlotsInfo" >> "MuzzleSlot" >> "compatibleItems");
 	availableRailAttachments = ["rhs_acc_2dpZenit"];
+
 	if ((_weapon splitstring "_")select 2 == "pkp") then
 	{
 		availableScopes = ["rhs_acc_1p29","rhs_acc_1p78","rhs_acc_1p63","rhs_acc_ekp1","rhs_acc_pkas"];
@@ -33,24 +35,9 @@ if ((_weapon splitstring "_")select 0 == "rhs") then
 		availableMuzzles = getArray (configfile >> "CfgWeapons" >> _weapon >> "WeaponSlotsInfo" >> "MuzzleSlot" >> "compatibleItems");
 		availableRailAttachments = ["rhs_acc_2dpZenit"];
 	};
-}
-else
-{
- 	if ((_weapon splitstring "_")select 2 == "ak12" || (_weapon splitstring "_")select 2 == "aku12" || (_weapon splitstring "_")select 2 == "ak12GL" ||(_weapon splitstring "_")select 2 == "RPK12") then
-	{
-		availableScopes = ["optic_ACO_grn","optic_Aco","optic_ACO_grn_smg","optic_Aco_smg","rhsusf_acc_eotech_552","rhsusf_acc_compm4","optic_Holosight","optic_Holosight_smg","rhsusf_acc_EOTECH"];
-		availableMuzzles = getarray (configfile >> "CfgWeapons" >> _weapon >> "WeaponSlotsInfo" >> "MuzzleSlot" >> "compatibleItems");
-		availableRailAttachments = ["acc_flashlight", "acc_pointer_IR", "ACE_acc_pointer_green", "ACE_acc_pointer_green_IR", "ACE_acc_pointer_red", "rhsusf_acc_anpeq15", "rhsusf_acc_anpeq15_light", "rhsusf_acc_anpeq15A", "rhsusf_acc_anpeq15side"]
-	}
-	else
-	{
-		availableScopes = ["rhs_acc_1p63","rhs_acc_ekp1","rhs_acc_pkas","hlc_optic_kobra"];
-		availableMuzzles = getarray (configfile >> "CfgWeapons" >> _weapon >> "WeaponSlotsInfo" >> "MuzzleSlot" >> "compatibleItems");
-		availableRailAttachments = [];
-	};
 };
 
-//add rows ro dialog
+//add rows to dialog
 //add scopes
 {
 	_CT_LISTNBOX lnbAddRow [gettext (configfile >> "CfgWeapons" >> _x >> "displayName")];

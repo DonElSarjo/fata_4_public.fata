@@ -24,21 +24,7 @@ class des_EMRdesertRifleman
 	};
 	items[] =
 	{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_EarPlugs"
+		"FirstAidKit"
 	};
 	linkedItems[] =
 	{
@@ -514,10 +500,6 @@ class des_EMRdesertSergeantAK74m : des_EMRdesertRiflemanAK74m
 		"rhs_weap_ak74m",
 		"rhs_pdu4"
 	};
-	items[] +=
-	{
-		"ACE_MapTools"
-	};
 	linkedItems[] =
 	{
 		"rhs_6b23_digi_6sh92_headset_mapcase",
@@ -592,10 +574,6 @@ class des_EMRdesertSergeantAKM : des_EMRdesertRiflemanAKM
 		"rhs_weap_akm",
 		"rhs_pdu4"
 	};
-	items[] +=
-	{
-		"ACE_MapTools"
-	};
 	linkedItems[] =
 	{
 		"rhs_6b23_digi_6sh92_headset_mapcase",
@@ -651,75 +629,17 @@ class des_EMRdesertMedicAK74m : des_EMRdesertRiflemanAK74m
 	displayName = "Sanitäter - AK-74m";
 	items[] =
 	{
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_fieldDressing",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_packingBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_elasticBandage",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_quikclot",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_morphine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_epinephrine",
-		"ACE_salineIV_250",
-		"ACE_salineIV_500",
-		"ACE_salineIV",
-		"ACE_personalAidKit",
-		"ACE_surgicalKit",
-		"ACE_tourniquet",
-		"ACE_tourniquet",
-		"ACE_tourniquet",
-		"ACE_EarPlugs"
+		"FirstAidKit",
+		"FirstAidKit",
+		"FirstAidKit",
+		"FirstAidKit",
+		"FirstAidKit",
+		"FirstAidKit",
+		"FirstAidKit",
+		"FirstAidKit",
+		"FirstAidKit",
+		"FirstAidKit",
+		"Medikit"
 	};
 	linkedItems[] =
 	{
@@ -962,10 +882,6 @@ class des_EMRdesertJuniorSergeantAK74mGP25 : des_EMRdesertGrenadierAK74mGP25
 		"rhs_weap_ak74m_gp25",
 		"rhs_pdu4"
 	};
-	items[] +=
-	{
-		"ACE_MapTools"
-	};
 	linkedItems[] +=
 	{
 		"ItemGPS"
@@ -996,10 +912,6 @@ class des_EMRdesertJuniorSergeantAKMgp25 : des_EMRdesertGrenadierAKMgp25
 	{
 		"rhs_weap_akm_gp25",
 		"rhs_pdu4"
-	};
-	items[] +=
-	{
-		"ACE_MapTools"
 	};
 	linkedItems[] +=
 	{
@@ -1066,68 +978,6 @@ class des_EMRdesertMachinegunnerPKM : des_EMRdesertMachinegunnerPKP
 		"Binocular"
 	};
 };
-/////////////////
-//LMG Loudouts //
-/////////////////
-class des_EMRdesertLmachinegunnerRPK : des_EMRdesertMachinegunnerPKP
-{
-	displayName = "Maschinengewehrschütze - RPK";
-	weapons[] =
-	{
-		"hlc_rifle_rpk",
-		"Binocular"
-	};
-	magazines[] =
-	{
-		"des_45Rnd_762x39mm",
-		"des_45Rnd_762x39mm",
-		"des_45Rnd_762x39mm",
-		"des_45Rnd_762x39mm",
-		"des_45Rnd_762x39mm",
-		"des_45Rnd_762x39mm",
-		"des_45Rnd_762x39mm",
-		"des_45Rnd_762x39mm",
-		"des_45Rnd_762x39mm",
-		"rhs_mag_rgd5",
-		"rhs_mag_rgd5",
-		"rhs_mag_rdg2_white",
-		"rhs_mag_rdg2_white"
-	};
-};
-class des_EMRdesertLmachinegunnerRPK12 : des_EMRdesertLmachinegunnerRPK
-{
-	displayName = "Maschinengewehrschütze - RPK-12";
-	weapons[] =
-	{
-		"hlc_rifle_RPK12",
-		"Binocular"
-	};
-	magazines[] =
-	{
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_45Rnd_545X39_7N10_AK",
-		"rhs_mag_rgd5",
-		"rhs_mag_rgd5",
-		"rhs_mag_rdg2_white",
-		"rhs_mag_rdg2_white"
-	};
-};
-class des_EMRdesertLmachinegunnerRPK74 : des_EMRdesertLmachinegunnerRPK12
-{
-	displayName = "Maschinengewehrschütze - RPK-74";
-	weapons[] =
-			{
-				"hlc_rifle_rpk74n",
-				"Binocular"
-			};
-};
 /////////
 // DMR //
 /////////
@@ -1160,10 +1010,6 @@ class des_EMRdesertDMRSVDm : des_EMRdesertRifleman
 		"rhs_mag_rdg2_white",
 		"rhs_mag_rdg2_white"
 	};
-	items[] +=
-	{
-		"ACE_MapTools"
-	};
 	linkedItems[] =
 	{
 		"rhs_6b23_digi_sniper",
@@ -1184,6 +1030,5 @@ class des_EMRdesertDMRSVDs : des_EMRdesertDMRSVDm
 		"rhs_weap_svds",
 		"rhs_weap_makarov_pmm",
 		"rhs_pdu4"
-
 	};
 }

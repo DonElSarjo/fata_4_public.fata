@@ -53,7 +53,7 @@ DES_mission_fnc_tsk1 =
 	//spawn mission objects
 	veh0 = "O_supplyCrate_F" createVehicle getMarkerPos "base";
 	[veh0] call _DES_fnc_clearCargo;
-	veh0 addItemCargoGlobal ["ACE_Banana", 100];
+	veh0 addItemCargoGlobal ["FirstAidKit", 100];
 
 	//add EH
 	EH_vehKilled = veh0 addEventhandler

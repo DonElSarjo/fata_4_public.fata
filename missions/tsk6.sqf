@@ -37,8 +37,6 @@ DES_mission_fnc_tsk6 =
 	removeHeadgear veh0;
 	removeGoggles veh0;
 	veh0 forceAddUniform "U_OrestesBody";
-	for "_i" from 1 to 6 do {veh0 addItemToUniform "ACE_fieldDressing";};
-	for "_i" from 1 to 2 do {veh0 addItemToUniform "ACE_morphine";};
 	veh0 addBackpack "B_Carryall_oucamo";
 	for "_i" from 1 to 2 do {veh0 addItemToBackpack "MiniGrenade";};
 	for "_i" from 1 to 2 do {veh0 addItemToBackpack "HandGrenade";};
