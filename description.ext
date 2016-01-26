@@ -82,8 +82,8 @@ class Params
 	class loadoutSettings //0
 	{
 		title = ":: Loadout Einstellungen ::";
-		values[]={1, 2, 3, 4, 5};
-		texts[]={ "EMR", "Flora", "Flora (Alt.)", "Flora (Mountain.)", "EMR Desert"};
+		values[]={5};
+		texts[]={"EMR Desert"};
 		default = 5;
 	};
 
@@ -193,11 +193,7 @@ class CfgFunctions
 
 class CfgRespawnInventory
 {
-	#include "6RusLoudouts\emr.hpp"
     #include "6RusLoudouts\emrDesert.hpp"
-	#include "6RusLoudouts\flora.hpp"
-	#include "6RusLoudouts\floraAlt.hpp"
-	#include "6RusLoudouts\floraMountain.hpp"
 };
 
 class Extended_Init_EventHandlers

@@ -10,7 +10,7 @@ _CT_LISTNBOX2 = _display displayctrl 1800;
 
 // filter weapons and define available equipment
 _weapon = primaryWeapon player;
-if ((_weapon splitstring "_")select 0 == "rhs")then
+if ((_weapon splitstring "_")select 0 == "rhs") then
 {
 	availableScopes = ["rhs_acc_1p63","rhs_acc_ekp1","rhs_acc_pkas"];
 	availableMuzzles = getArray (configfile >> "CfgWeapons" >> _weapon >> "WeaponSlotsInfo" >> "MuzzleSlot" >> "compatibleItems");
