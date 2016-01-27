@@ -13,4 +13,4 @@ missions_to_remove = 0;
 des_sideMissionCyle = false;
 
 publicVariable "missions_to_remove";
-publicVariable "des_sideMissionCyle";
+publicVariableServer "des_sideMissionCyle";

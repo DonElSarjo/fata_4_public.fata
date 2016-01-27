@@ -108,7 +108,6 @@ if (isServer) then
 
 	//side mission loop
 	des_sideMissionCyle = true;
-	publicVariable "des_sideMissionCyle";
 	[] spawn des_fnc_randomSideMission;
 
 	//ticket system

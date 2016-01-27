@@ -226,7 +226,7 @@ _mrkSpawnPos_crash       	= 		markerArray_crash   		call BIS_fnc_selectRandom;
 		//mission_17
 		[
             [getMarkerPos "base" select 0, getMarkerPos "base" select 1],  //pos mission in format [x,y,y]
-			{des_sideMissionCyle = true; publicVariable "des_sideMissionCyle"; [] remoteExec ["des_fnc_randomSideMission", 2];},
+			{des_sideMissionCyle = true; publicVariableServer "des_sideMissionCyle"; [] remoteExec ["des_fnc_randomSideMission", 2];},
             "Zufallsmission",
             "Zufallsmissions Schleife",
             "n/a",
