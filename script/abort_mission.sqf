@@ -10,3 +10,5 @@ _obj removeAction _id;
 "Wähle eine neue Mission!" remoteExec ["hint"];
 missions_to_remove = 0;
 publicVariable "missions_to_remove";
+
+des_sideMissionCyle = false;

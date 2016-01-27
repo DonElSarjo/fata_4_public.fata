@@ -28,5 +28,7 @@ class des_fnc
 			class safezone {};
 			class strategicMapOpen {};
 			class establishingShotClient {};
+			class randomSideMission {};
+			class loudoutAdjustment {};
 	}
 };
