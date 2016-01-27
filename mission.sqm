@@ -1185,6 +1185,7 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_Mi24P_CAS_vdv";
 			leader=1;
+			lock="UNLOCKED";
 			skill=0.60000002;
 			text="air_2";
 			syncId=9;
@@ -1197,6 +1198,7 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_Mi8MTV3_vdv";
 			leader=1;
+			lock="UNLOCKED";
 			skill=0.60000002;
 			text="air_0";
 			syncId=10;
@@ -1393,6 +1395,7 @@ class Mission
 			side="EMPTY";
 			vehicle="rhs_btr70_vdv";
 			leader=1;
+			lock="UNLOCKED";
 			skill=0.60000002;
 			syncId=26;
 			synchronizations[]={1};
@@ -5468,6 +5471,7 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_Mi8MTV3_vdv";
 			leader=1;
+			lock="UNLOCKED";
 			skill=0.60000002;
 			text="air_0_1";
 			syncId=50;
@@ -5480,6 +5484,7 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_Mi24P_CAS_vdv";
 			leader=1;
+			lock="UNLOCKED";
 			skill=0.60000002;
 			text="air_2_1";
 			syncId=51;
@@ -5492,6 +5497,7 @@ class Mission
 			side="EMPTY";
 			vehicle="RHS_Mi24P_vdv";
 			leader=1;
+			lock="UNLOCKED";
 			skill=0.60000002;
 			text="air_2_2";
 			syncId=52;

@@ -7,7 +7,7 @@ if (isServer) then
 	[
 		"GetIn",
 		{
-			if (!(typeOf (_this select 2) isEqualTo "rhs_pilot") && ((_this select 1) isEqualTo "driver" || (_this select 1) isEqualTo "gunner")) exitWith
+			if (!(typeOf (_this select 2) isEqualTo "rhs_pilot") && (_this select 0) iskindof "AIR" && ((_this select 1) isEqualTo "driver" || (_this select 1) isEqualTo "gunner")) exitWith
 			{
 					(_this select 2) action ["GetOut", _this select 0];
 
@@ -21,10 +21,10 @@ if (isServer) then
 						[east,-3] call BIS_fnc_respawnTickets;
 
 						_separator = parseText "<br />------------------------<br />";
-						_image = getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "picture");
+						_image = parseText format ["<img size = '4' image = '%1'/>", getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "picture")];
 						_name = getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "displayName");
 						_text = "Ihnen wurden 3 Tickets abgezogen";
-						_txt = composeText [_separator, image _image, _separator, _name, _separator, _text];
+						_txt = composeText [_separator, _image, _separator, _name, _separator, _text];
 
 						_txt remoteExecCall ["hint", owner (_this select 2)];
 						accessCar = true
@@ -45,10 +45,10 @@ if (isServer) then
 						[east, -5] call BIS_fnc_respawnTickets;
 
 						_separator = parseText "<br />------------------------<br />";
-						_image = getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "picture");
+						_image = parseText format ["<img size = '4' image = '%1'/>", getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "picture")];
 						_name = getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "displayName");
 						_text = "Ihnen wurden 5 Tickets abgezogen";
-						_txt = composeText [_separator, image _image, _separator, _name, _separator, _text];
+						_txt = composeText [_separator, _image, _separator, _name, _separator, _text];
 
 						_txt remoteExecCall ["hint", owner (_this select 2)];
 						accessAPC = true
@@ -69,10 +69,10 @@ if (isServer) then
 						[east, -8] call BIS_fnc_respawnTickets;
 
 						_separator = parseText "<br />------------------------<br />";
-						_image = getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "picture");
+						_image = parseText format ["<img size = '4' image = '%1'/>", getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "picture")];
 						_name = getText (configfile >> "CfgVehicles" >> typeOf (_this select 0) >> "displayName");
 						_text = "Ihnen wurden 8 Tickets abgezogen";
-						_txt = composeText [_separator, image _image, _separator, _name, _separator, _text];
+						_txt = composeText [_separator, _image, _separator, _name, _separator, _text];
 
 						_txt remoteExecCall ["hint", owner (_this select 2)];
 
@@ -95,7 +95,7 @@ if (isServer) then
 	[
 		"GetOut",
 	   {
-		   if (!(typeOf (_this select 2) isEqualTo "rhs_pilot") && ((_this select 1) isEqualTo "driver" || (_this select 1) isEqualTo "gunner")) exitWith
+		   if (!(typeOf (_this select 2) isEqualTo "rhs_pilot") && (_this select 0) iskindof "AIR" && ((_this select 1) isEqualTo "driver" || (_this select 1) isEqualTo "gunner")) exitWith
 		   {"Sie sind kein Pilot!" remoteExecCall ["hint", owner (_this select 2)];};
 			if (count (crew (_this select 0)) < 1 && {["SAFE", (getPos (_this select 0))] call DES_fnc_isInArea}) then
 			{
