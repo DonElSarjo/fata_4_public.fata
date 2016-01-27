@@ -71,10 +71,12 @@ DES_mission_fnc_tsk8 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Destroy",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[8,1] call des_fnc_sideMissionNotification;
 
 	//create mission objects
 	veh0 = "Box_East_AmmoOrd_F" createVehicle getMarkerPos "base";
@@ -106,9 +108,11 @@ DES_mission_fnc_tsk8 =
 		"Killed",
 		{
 			_null = ["tsk0", "SUCCEEDED"] call BIS_fnc_taskSetState;
+			[8,2] call des_fnc_sideMissionNotification;
 			[east, 6] call BIS_fnc_respawnTickets;
 			[] spawn
 			{
+				sleep 15;
 				[180, 1] remoteExec ["DES_fnc_timer", -2];
 				sleep 180;
 				call DES_fnc_missionEnd;

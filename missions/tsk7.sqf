@@ -41,9 +41,11 @@ DES_mission_fnc_tsk7 =
 		"Killed",
 		{
 			_null = ["tsk0", "SUCCEEDED"] call BIS_fnc_taskSetState;
+			[7,2] call des_fnc_sideMissionNotification;
 			[east, 5] call BIS_fnc_respawnTickets;
 			[]spawn
 			{
+				sleep 15;
 				[180, 1] remoteExec ["DES_fnc_timer",-2];
 				sleep 180;
 				call DES_fnc_missionEnd;
@@ -68,11 +70,12 @@ DES_mission_fnc_tsk7 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Destroy",
 		false
 	] call BIS_fnc_taskCreate;
 
+	[7,1] call des_fnc_sideMissionNotification;
 	//debug
 	systemChat format ["Mission created after %1 sec", (time - _time)];
 }

@@ -1,27 +1,21 @@
-_obj = _this select 0;
+_obj    = _this select 0;
 _caller = _this select 1;
-_id = _this select 2;
+_id     = _this select 2;
 
 //check if a mission is already selected
-if (!(player isKindOf "rhs_msv_sergeant" || player isKindOf "rhs_msv_junior_sergeant" || player isKindOf "rhs_msv_emr_officer")) exitWith
-{
-	hint "Nur der Gruppenführer oder der Manövertruppführer kann Missionen anfordern!"
-};
+if !(player isKindOf "rhs_msv_sergeant") exitWith {hint "Nur der Gruppenführer kann Missionen anfordern!"};
 
-tasks_active = player call BIS_fnc_tasksUnit;
+_tasks_active = player call BIS_fnc_tasksUnit;
 
 //if a mission is already running, give option to cancel it
-if ( (count tasks_active) > 0 ) exitwith
+if ((count _tasks_active) > 0) exitwith
 {
 	hint "Sie haben bereits einen Auftrag! Erfüllen Sie diesen oder brechen Sie ab!";
 
 	missions_to_remove = missions_to_remove + 1;
 	publicVariable "missions_to_remove";
 
-	if (missions_to_remove < 2 ) then
-		{
-			[mission_gen,["Mission abbrechen","script\abort_mission.sqf"]] remoteExec ["addaction",0];
-		};
+	if (missions_to_remove < 2) then {[mission_gen, ["Mission abbrechen", "script\abort_mission.sqf"]] remoteExec ["addaction", 0]};
 };
 
 //get random mission position
@@ -226,7 +220,7 @@ _mrkSpawnPos_crash       	= 		markerArray_crash   		call BIS_fnc_selectRandom;
 		//mission_17
 		[
             [getMarkerPos "base" select 0, getMarkerPos "base" select 1],  //pos mission in format [x,y,y]
-			{des_sideMissionCyle = true; publicVariableServer "des_sideMissionCyle"; [] remoteExec ["des_fnc_randomSideMission", 2];},
+			{des_sideMissionCyle = true; publicVariableServer "des_sideMissionCyle"; [] remoteExec ["des_fnc_randomSideMission", 2]},
             "Zufallsmission",
             "Zufallsmissions Schleife",
             "n/a",

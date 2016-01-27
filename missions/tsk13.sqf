@@ -34,10 +34,12 @@ DES_mission_fnc_tsk13 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Search",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[13,1] call des_fnc_sideMissionNotification;
 
 	_centerposition = _mission_pos;//position
 	_rad = 50;//radius for ieds to spawn
@@ -100,6 +102,7 @@ DES_mission_fnc_tsk13 =
 	            if (ied_array < 1) then
 	            {
 	                _null = ["tsk0", "SUCCEEDED"] call BIS_fnc_taskSetState;
+					[13,2] call des_fnc_sideMissionNotification;
 	                [east, 3] call BIS_fnc_respawnTickets;
 	                call DES_fnc_missionEnd;
 	            };

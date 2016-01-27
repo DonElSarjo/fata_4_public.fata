@@ -69,10 +69,12 @@ DES_mission_fnc_tsk5 =
 		getPos veh2,
 		1,
 		1,
-		true,
+		false,
 		"Search",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[5,1] call des_fnc_sideMissionNotification;
 
 	_null =
 	[
@@ -86,7 +88,7 @@ DES_mission_fnc_tsk5 =
 		getPos veh1,
 		1,
 		1,
-		true,
+		false,
 		"Destroy",
 		false
 	] call BIS_fnc_taskCreate;
@@ -105,6 +107,7 @@ DES_mission_fnc_tsk5 =
 		"Killed",
 		{
 			_null = ["tsk0", "FAILED"] call BIS_fnc_taskSetState;
+			[5,3] call des_fnc_sideMissionNotification;
 			call DES_fnc_missionEnd;
 		}
 	];
@@ -117,6 +120,7 @@ DES_mission_fnc_tsk5 =
 		"
 			_null = ['tsk0','SUCCEEDED'] call BIS_fnc_taskSetState;
 			[east, 3] call BIS_fnc_respawnTickets;
+			[5,2] call des_fnc_sideMissionNotification;
 			call DES_fnc_missionEnd;
 		",
 		""

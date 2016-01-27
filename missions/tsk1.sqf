@@ -45,11 +45,13 @@ DES_mission_fnc_tsk1 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Support",
 		false
 	] call BIS_fnc_taskCreate;
 
+	[1,1] call des_fnc_sideMissionNotification;
+	
 	//spawn mission objects
 	veh0 = "O_supplyCrate_F" createVehicle getMarkerPos "base";
 	[veh0] call _DES_fnc_clearCargo;
@@ -61,6 +63,7 @@ DES_mission_fnc_tsk1 =
 		"Killed",
 		{
 				_null = ['tsk0', 'FAILED'] call BIS_fnc_taskSetState;
+				[1,3] call des_fnc_sideMissionNotification;
 				call DES_fnc_missionEnd;
 		}
 	];
@@ -87,6 +90,7 @@ DES_mission_fnc_tsk1 =
 		"[trg0, veh0] call BIS_fnc_inTrigger",
 		"
 			_null = ['tsk0', 'SUCCEEDED'] call BIS_fnc_taskSetState;
+			[1,2] call des_fnc_sideMissionNotification;
 			[east, 3] call BIS_fnc_respawnTickets;
 			[] spawn
 			{

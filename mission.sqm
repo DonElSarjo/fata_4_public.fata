@@ -419,7 +419,7 @@ class Mission
 					id=4;
 					side="EAST";
 					vehicle="rhs_msv_sergeant";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.5;
@@ -465,7 +465,7 @@ class Mission
 					id=8;
 					side="EAST";
 					vehicle="rhs_msv_at";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					skill=0.40000001;
 					text="s4";
 					description="Voron - AT-Schütze";

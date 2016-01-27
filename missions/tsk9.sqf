@@ -48,10 +48,12 @@ DES_mission_fnc_tsk9 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Search",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[9,1] call des_fnc_sideMissionNotification;
 
 	_selectedComposition = ["captive_1", "captive_2", "captive_3", "captive_4", "captive_5", "captive_6"] call BIS_fnc_selectRandom;
 	composition  = [_mission_pos, 0, call (compile (preprocessFileLineNumbers ("Compositions\Captive\" + _selectedComposition + ".sqf")))] call BIS_fnc_ObjectsMapper;
@@ -65,13 +67,13 @@ DES_mission_fnc_tsk9 =
 	unit3 setDir getDir captive_3;
 
 	{
-	_x switchMove "Acts_AidlPsitMstpSsurWnonDnon_loop";
-	_x setCaptive true;
-	_x disableai "MOVE";
-	_x disableAI "FSM";
-	_x disableAi "TARGET";
-	_x disableAI "AUTOTARGET";
-	[_x, ["Die Geisel befreien.", "script\release.sqf"]] remoteExec ["addAction", 0, true];
+		_x switchMove "Acts_AidlPsitMstpSsurWnonDnon_loop";
+		_x setCaptive true;
+		_x disableai "MOVE";
+		_x disableAI "FSM";
+		_x disableAi "TARGET";
+		_x disableAI "AUTOTARGET";
+		[_x, ["Die Geisel befreien.", "script\release.sqf"]] remoteExec ["addAction", 0, true];
 	}
 	foreach units _captive;
 
@@ -88,8 +90,10 @@ DES_mission_fnc_tsk9 =
 			"Killed",
 			{
 				_null = ["tsk0", "FAILED"] call BIS_fnc_taskSetState;
+				[9,3] call des_fnc_sideMissionNotification;
 				[]spawn
 				{
+					sleep 15;
 					[180, 1] remoteExec ["DES_fnc_timer", -2];
 					sleep 180;
 					call DES_fnc_missionEnd;
@@ -106,6 +110,7 @@ DES_mission_fnc_tsk9 =
 		"([trg0, unit1] call BIS_fnc_inTrigger && [trg0, unit2] call BIS_fnc_inTrigger && [trg0, unit3] call BIS_fnc_inTrigger)",
 		"
 			_null = ['tsk0', 'SUCCEEDED'] call BIS_fnc_taskSetState;
+			[9,2] call des_fnc_sideMissionNotification;
 			[east, 7] call BIS_fnc_respawnTickets;
 			call DES_fnc_missionEnd;
 		",

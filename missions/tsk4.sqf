@@ -35,10 +35,12 @@ DES_mission_fnc_tsk4 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Attack",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[4,1] call des_fnc_sideMissionNotification;
 
 	mrk = createMarker ["missionmrk", _mission_pos];
 	mrk setMarkerShape "ELLIPSE";
@@ -59,6 +61,7 @@ DES_mission_fnc_tsk4 =
 		"
 			_null = ['tsk0','SUCCEEDED'] call BIS_fnc_taskSetState;
 			call DES_fnc_missionEnd;
+			[4,2] call des_fnc_sideMissionNotification;
 			[east, 8] call BIS_fnc_respawnTickets;
 		",
 		""

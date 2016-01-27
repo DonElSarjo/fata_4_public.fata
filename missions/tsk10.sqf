@@ -38,7 +38,7 @@ DES_mission_fnc_tsk10 =
 
 	_nearRoads = mission_pos nearRoads 10;
 
-	if(count _nearRoads > 0) then
+	if (count _nearRoads > 0) then
 	{
 		_road = _nearRoads select 0;
 		_roadConnectedTo = roadsConnectedTo _road;
@@ -77,10 +77,12 @@ DES_mission_fnc_tsk10 =
 		mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Attack",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[10,1] call des_fnc_sideMissionNotification;
 
 	unitcount = count units ((spawned_patr select 0)select 0);
 
@@ -104,7 +106,7 @@ DES_mission_fnc_tsk10 =
 								mission_pos,
 								1,
 								1,
-								true,
+								false,
 								"DEFEND",
 								false
 							] call BIS_fnc_taskCreate;
@@ -117,6 +119,7 @@ DES_mission_fnc_tsk10 =
 						"this",
 						"
 							_null = ['tsk1', 'FAILED'] call BIS_fnc_taskSetState;
+							[10,3] call des_fnc_sideMissionNotification;
 							call DES_fnc_missionEnd;
 						",
 						""
@@ -126,10 +129,12 @@ DES_mission_fnc_tsk10 =
 					{
 						sleep 600;
 						_null = ["tsk1", "SUCCEEDED"] call BIS_fnc_taskSetState;
+						[10,2] call des_fnc_sideMissionNotification;
 						[east, 10] call BIS_fnc_respawnTickets;
 						deleteVehicle trg0;
 						[]spawn
 						{
+							sleep 15;
 							[180, 1] remoteExec ["DES_fnc_timer",-2];
 							sleep 180;
 							call DES_fnc_missionEnd;

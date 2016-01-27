@@ -31,10 +31,12 @@ DES_mission_fnc_tsk3 =
 		 _mission_pos,
 		 1,
 		 1,
-		 true,
+		 false,
 		 "Move",
 		 false
 	] call BIS_fnc_taskCreate;
+
+	[3,1] call des_fnc_sideMissionNotification;
 
 	//spawn mission objects
 	_veh0_available =
@@ -58,6 +60,7 @@ DES_mission_fnc_tsk3 =
 		"Killed",
 		{
 			_null = ["tsk0", "FAILED"] call BIS_fnc_taskSetState;
+			[3,3] call des_fnc_sideMissionNotification;
 			call DES_fnc_missionEnd;
 		}
 	];
@@ -69,6 +72,7 @@ DES_mission_fnc_tsk3 =
 			if (((_this select 0) distance2D (["tsk0"] call BIS_fnc_taskDestination)) < 50) then
 			{
 				_null = ["tsk0", "SUCCEEDED"] call BIS_fnc_taskSetState;
+				[3,2] call des_fnc_sideMissionNotification;
 				call DES_fnc_missionEnd;
 				[east, 5] call BIS_fnc_respawnTickets;
 			};

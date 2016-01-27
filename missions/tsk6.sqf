@@ -67,10 +67,12 @@ DES_mission_fnc_tsk6 =
 		getPos veh0,
 		1,
 		1,
-		true,
+		false,
 		"Destroy",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[6,1] call des_fnc_sideMissionNotification;
 
 	EH_veh0Killed = veh0 addEventhandler
 	[
@@ -78,6 +80,7 @@ DES_mission_fnc_tsk6 =
 		{
 			_null = ["tsk0", "SUCCEEDED"] call BIS_fnc_taskSetState;
 			call DES_fnc_missionEnd;
+			[6,2] call des_fnc_sideMissionNotification;
 			[east, 5] call BIS_fnc_respawnTickets;
 		}
 	];

@@ -75,10 +75,12 @@ DES_mission_fnc_tsk11 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Support",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[11,1] call des_fnc_sideMissionNotification;
 
 	//add EH
 	{
@@ -87,9 +89,10 @@ DES_mission_fnc_tsk11 =
 			"Killed",
 			{
 				_null = ['tsk0', 'FAILED'] call BIS_fnc_taskSetState;
+				[11,3] call des_fnc_sideMissionNotification;
 				[]spawn
 				{
-
+					sleep 15;
 					[180, 1] remoteExec ["DES_fnc_timer", -2];
 					sleep 180;
 					call DES_fnc_missionEnd;
@@ -103,13 +106,10 @@ DES_mission_fnc_tsk11 =
 	trg0 setTriggerArea [50, 50, 0, false];
 	trg0 setTriggerStatements
 	[
-		"
-		(
-			[trg0, unit1] call BIS_fnc_inTrigger && [trg0, unit2] call BIS_fnc_inTrigger && [trg0, unit3] call BIS_fnc_inTrigger
-		)
-		",
+		"[trg0, unit1] call BIS_fnc_inTrigger && [trg0, unit2] call BIS_fnc_inTrigger && [trg0, unit3] call BIS_fnc_inTrigger",
 		"
 			_null = ['tsk0', 'SUCCEEDED'] call BIS_fnc_taskSetState;
+			[11,2] call des_fnc_sideMissionNotification;
 			[east, 6] call BIS_fnc_respawnTickets;
 			call DES_fnc_missionEnd;
 		",

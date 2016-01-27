@@ -44,10 +44,12 @@ DES_mission_fnc_tsk16 =
 		_mission_pos,
 			1,
 		1,
-		true,
+		false,
 		"Search",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[16,1] call des_fnc_sideMissionNotification;
 
 	//create mission objects
 	veh0 = "Land_DataTerminal_01_F" createVehicle _mission_pos;
@@ -57,11 +59,14 @@ DES_mission_fnc_tsk16 =
 	        "Flugschreiber bergen",
 	        {
 	            _null = ["tsk0", "SUCCEEDED"] call BIS_fnc_taskSetState;
+				[16,2] call des_fnc_sideMissionNotification;
 	            [east, 5] call BIS_fnc_respawnTickets;
 	            deleteVehicle veh0;
 	            [] spawn
 	            {
-	                sleep 180;
+					sleep 15;
+					[180, 1] remoteExec ["DES_fnc_timer", -2];
+					sleep 180;
 	                call DES_fnc_missionEnd;
 	            };
 	        }
@@ -75,8 +80,10 @@ DES_mission_fnc_tsk16 =
 		"Killed",
 		{
 			_null = ["tsk0", "FAILED"] call BIS_fnc_taskSetState;
+			[16,3] call des_fnc_sideMissionNotification;
 			[] spawn
 			{
+				sleep 15;
 				[180, 1] remoteExec ["DES_fnc_timer", -2];
 				sleep 180;
 				call DES_fnc_missionEnd;

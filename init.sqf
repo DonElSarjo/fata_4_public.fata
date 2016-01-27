@@ -9,10 +9,7 @@
 
 
 //player loudout selection
-if (hasInterface) then
-{
-	[player] execFSM "6RusLoudouts\loadoutselector.fsm";
-};
+if (hasInterface) then {[player] execFSM "6RusLoudouts\loadoutselector.fsm"};
 
 //logistics
 execVM "R3F_LOG\init.sqf";
@@ -118,7 +115,6 @@ if (isServer) then
 		while {[east,0] call BIS_fnc_respawnTickets > 0} do {sleep 5};
 		["l_fail", false, false, false] remoteExec ["BIS_fnc_endMission"]
 	};
-
 };
 
 // HC switch

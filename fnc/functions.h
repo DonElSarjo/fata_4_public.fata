@@ -4,6 +4,7 @@ class des_fnc
 	class functions
 	{
 			file = "fnc";
+			
 			class deploymast {};
 			class ambushWaypoint {};
 			class checksurface {};
@@ -30,5 +31,6 @@ class des_fnc
 			class establishingShotClient {};
 			class randomSideMission {};
 			class loudoutAdjustment {};
+			class sideMissionNotification {};
 	}
 };

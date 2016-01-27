@@ -66,6 +66,7 @@ DES_mission_fnc_tsk12 =
 				if (unitcount < 1) then
 				{
 					_null = ["tsk0", "SUCCEEDED"] call BIS_fnc_taskSetState;
+					[12,2] call des_fnc_sideMissionNotification;
 					call DES_fnc_missionEnd;
 					[east, 3] call BIS_fnc_respawnTickets;
 				}
@@ -90,10 +91,12 @@ DES_mission_fnc_tsk12 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Destroy",
 		false
 	] call BIS_fnc_taskCreate;
+
+	[12,1] call des_fnc_sideMissionNotification;
 
 
 	//debug

@@ -35,11 +35,12 @@ DES_mission_fnc_tsk2 =
 		_mission_pos,
 		1,
 		1,
-		true,
+		false,
 		"Move",
 		false
 	] call BIS_fnc_taskCreate;
 
+	[2,1] call des_fnc_sideMissionNotification;
 	//spawn mission objects
 	_veh0_available =
 	[
@@ -64,6 +65,7 @@ DES_mission_fnc_tsk2 =
 		"Killed",
 		{
 			_null = ["tsk0", "FAILED"] call BIS_fnc_taskSetState;
+			[2,3] call des_fnc_sideMissionNotification;
 			call DES_fnc_missionEnd;
 		}
 	];
@@ -91,6 +93,7 @@ DES_mission_fnc_tsk2 =
 		"
 			_null = ['tsk0','SUCCEEDED'] call BIS_fnc_taskSetState;
 			[east, 5] call BIS_fnc_respawnTickets;
+			[2,2] call des_fnc_sideMissionNotification;
 			call DES_fnc_missionEnd;
 		",
 		""
