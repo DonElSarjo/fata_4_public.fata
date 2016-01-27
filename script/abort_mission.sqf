@@ -8,7 +8,9 @@ if (["tsk0"] call BIS_fnc_taskExists) then {[] remoteExecCall ["DES_fnc_missionE
 //remove action from _obj
 _obj removeAction _id;
 "Wähle eine neue Mission!" remoteExec ["hint"];
-missions_to_remove = 0;
-publicVariable "missions_to_remove";
 
+missions_to_remove = 0;
 des_sideMissionCyle = false;
+
+publicVariable "missions_to_remove";
+publicVariable "des_sideMissionCyle";

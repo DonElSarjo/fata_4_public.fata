@@ -106,7 +106,7 @@ if (isServer) then
 	grp_array_mech append ((configfile >> "CfgGroups" >> "Indep" >> "rhs_faction_insurgents" >> "rhs_group_indp_ins_btr60") call BIS_fnc_returnChildren);
 	grp_array_mech append ((configfile >> "CfgGroups" >> "Indep" >> "rhs_faction_insurgents" >> "rhs_group_indp_ins_btr70") call BIS_fnc_returnChildren);
 
-	//side mission look
+	//side mission loop
 	des_sideMissionCyle = true;
 	publicVariable "des_sideMissionCyle";
 	[] spawn des_fnc_randomSideMission;
