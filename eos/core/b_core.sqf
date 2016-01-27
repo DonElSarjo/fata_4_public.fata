@@ -1,6 +1,6 @@
 // (!isServer) -> (hasInterface or isServer)
 
-if ((!hasInterface && !isServer) || {!hcPresent && isServer}) then
+if ((!hasInterface && !isServer) || (!hcPresent && isServer)) then
 {
 	private ["_fGroup","_cargoType","_vehType","_CHside","_mkrAgl","_initialLaunch","_pause","_eosZone","_hints","_waves","_aGroup","_side","_actCond","_enemyFaction","_mAH","_mAN","_distance","_grp","_cGroup","_bGroup","_CHType","_time","_timeout","_faction"];
 

@@ -1,5 +1,5 @@
 // (isServer) -> (!hasInterface && !isServer)
-if ((!hasInterface && !isServer) || {!hcPresent && isServer}) then
+if ((!hasInterface && !isServer) || (!hcPresent && isServer)) then
 {
 	private ["_HPpatrols","_HPgroupProbability","_CHgroupArray","_LVgroupArray","_HPgroupArray","_PAgroupArray","_CHgroupSize","_CHGroups","_SVehGroups","_AVgroupSize","_AVehGroups","_LVehGroups","_LVgroupSize","_PAgroupSize","_PApatrols","_HPpatrols","_HPgroupSize"];
 

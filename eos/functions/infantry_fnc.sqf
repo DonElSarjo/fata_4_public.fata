@@ -1,4 +1,4 @@
-if ((!hasInterface && !isServer) || {!hcPresent && isServer}) then
+if ((!hasInterface && !isServer) || (!hcPresent && isServer)) then
 {
 	// SINGLE INFANTRY GROUP
 	private ["_grp","_unit","_pool","_pos","_faction"];

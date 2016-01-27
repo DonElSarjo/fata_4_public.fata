@@ -44,7 +44,7 @@
 
 private "_men";
 //(isServer) -> (!hasInterface && !isServer)
-if ((!hasInterface && !isServer) || {!hcPresent && isServer}) then
+if ((!hasInterface && !isServer) || (!hcPresent && isServer)) then
 {
 
   private "_sortArray";
@@ -153,7 +153,6 @@ if ((!hasInterface && !isServer) || {!hcPresent && isServer}) then
       };
     };
   } foreach _men;
-
 }; //isserver
 
 // Hide

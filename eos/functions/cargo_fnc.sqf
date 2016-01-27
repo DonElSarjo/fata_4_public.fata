@@ -1,5 +1,5 @@
 	//(!isServer) -> (hasInterface or isServer)
-if ((!hasInterface && !isServer) || {!hcPresent && isServer}) then
+if ((!hasInterface && !isServer) || (!hcPresent && isServer)) then
 {
 	private ["_cargoPool","_emptySeats","_vehicle","_debug","_grp","_grpSize"];
 
