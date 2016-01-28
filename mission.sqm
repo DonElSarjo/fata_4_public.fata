@@ -55,13 +55,13 @@ class Mission
 		"rhs_c_sprut",
 		"rhs_c_bmd",
 		"A3_Characters_F",
-		"cup_misc3_config",
-		"cup_misc_e_config",
 		"rhs_main",
 		"A3_Structures_F_Civ_Lamps",
 		"A3_Soft_F_Gamma_Offroad",
 		"a3_soft_f_offroad_01",
-		"A3_Soft_F_Car"
+		"A3_Soft_F_Car",
+		"aia_misc3_config",
+		"aia_misc_e_config"
 	};
 	addOnsAuto[]=
 	{
@@ -116,8 +116,8 @@ class Mission
 		"rhs_c_heavyweapons",
 		"rhs_c_bmd",
 		"rhs_c_a2port_armor",
-		"cup_misc3_config",
-		"cup_misc_e_config",
+		"aia_misc3_config",
+		"aia_misc_e_config",
 		"rhs_main",
 		"A3_Structures_F_Civ_Lamps"
 	};
